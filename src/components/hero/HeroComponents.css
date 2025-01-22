@@ -1,0 +1,32 @@
+.hero-link {
+  color: #0aff9d;
+  transition: transform 0.3s ease;
+}
+
+.hero-link:hover {
+  transform: scale(1.1);
+}
+
+.hero-button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 400;
+  border: 1px solid #ebecf3;
+  border-radius: 0.5em;
+  background-color: #ebecf3;
+  color: #222;
+  text-align: center;
+  width: 50%;
+  transition: transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  color: #ebecf3;
+  border: 1px solid #0aff9d;
+  transform: scale(1.1);
+}
+
+.vertical-color {
+  height: calc(100vh - 80px);
+}
