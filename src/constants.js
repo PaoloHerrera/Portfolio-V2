@@ -15,6 +15,48 @@ export const PROFESSIONAL_INFORMATION = {
 	},
 }
 
+export const EXPERIENCE_ITEMS = [
+	{
+		id: 1,
+		company: 'Tecbros LLC.',
+		date: 'Marzo 2019 - Marzo 2023',
+		role: 'Ingeniero de Software Fullstack',
+		city: 'Santiago',
+		country: 'Chile',
+		description: [
+			'Desarrollador sistema de Renegociación, Refinanciamiento y Compromiso de Pago para una importante empresa de Retail.',
+			'Diseño y desarrollo de un CRM para un importante banco de Chile.',
+			'Diseño y desarrollo de un sistema personalizado de envíos de Emails y SMS para un importante banco de Chile.',
+		],
+	},
+	{
+		id: 2,
+		company: 'Whitemail Singapur SPA.',
+		date: 'Septiembre 2018 - Diciembre 2022',
+		role: 'Ingeniero de Software Fullstack',
+		city: 'Santiago',
+		country: 'Chile',
+		description: [
+			'Desarrollador de un sistema de gestión de envíos masivos Emails y SMS.',
+			'Desarrollador de landing pages y sitios web para campañas de cobranza.',
+			'Soporte y comunicación con clientes y stakeholders.',
+		],
+	},
+	{
+		id: 3,
+		company: 'Yami SPA.',
+		date: 'Julio 2017 - Agosto 2018',
+		role: 'Ingeniero de Software Fullstack',
+		city: 'Santiago',
+		country: 'Chile',
+		description: [
+			'Diseño y desarrollo de la plataforma web principal para usuarios y del dashboard de administración para los clientes.',
+			'Diseño y gestión de la base de datos.',
+			'Diseño de la arquitectura de la plataforma web principal',
+		],
+	},
+]
+
 export const NAVBAR_BRAND = {
 	name: 'Paolo',
 	link: '#home',
