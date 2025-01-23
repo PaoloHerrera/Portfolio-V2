@@ -1,15 +1,17 @@
 import './HeroComponents.css'
 
 export function HeroTitle({ children }) {
-	return <h1 className="text-6xl font-bold">{children}</h1>
+	return <h1 className="xl:text-6xl text-4xl font-bold">{children}</h1>
 }
 
 export function HeroSubtitle({ children }) {
-	return <h2 className="text-secondary text-3xl font-bold">{children}</h2>
+	return (
+		<h2 className="text-secondary xl:text-3xl text-xl font-bold">{children}</h2>
+	)
 }
 
 export function HeroParagraph({ children }) {
-	return <p className="text-xl">{children}</p>
+	return <p className="xl:text-xl text-lg">{children}</p>
 }
 
 export function HeroLink({ children, link }) {
