@@ -82,7 +82,7 @@ export const NAVBAR_ITEMS = [
 	{
 		id: 4,
 		name: 'Tecnologías',
-		link: '#technologies',
+		link: '#skills',
 	},
 	{
 		id: 5,
