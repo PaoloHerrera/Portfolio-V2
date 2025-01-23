@@ -13,7 +13,10 @@ import { PROFESSIONAL_INFORMATION } from '../../constants'
 
 export default function Hero() {
 	return (
-		<section className="w-full flex justify-between items-center gap-52">
+		<section
+			id="home"
+			className="w-full flex justify-between items-center gap-52"
+		>
 			<div className="w-1/2 text-left flex flex-col gap-7">
 				<HeroTitle>
 					{PROFESSIONAL_INFORMATION.name} {PROFESSIONAL_INFORMATION.lastName}
