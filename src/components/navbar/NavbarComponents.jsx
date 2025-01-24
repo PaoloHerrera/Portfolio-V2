@@ -39,6 +39,7 @@ export function ToggleButton({ setIsMenuOpen }) {
 				onClick={() => {
 					setIsMenuOpen(true)
 				}}
+				aria-label="Abrir menu"
 			>
 				<MenuIcon />
 			</button>
@@ -54,6 +55,7 @@ export function CloseButton({ setIsMenuOpen }) {
 			onClick={() => {
 				setIsMenuOpen(false)
 			}}
+			aria-label="Cerrar menu"
 		>
 			<CloseIcon />
 		</button>
