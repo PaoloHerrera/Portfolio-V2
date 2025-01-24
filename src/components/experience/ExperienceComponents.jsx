@@ -3,9 +3,9 @@ import { CalendarIcon } from '../../assets/Icons'
 
 function ExperienceHeader({ company, date }) {
 	return (
-		<div className="flex flex-row justify-between experience-header">
-			<h2 className="text-2xl font-bold">{company}</h2>
-			<span className="font-bold">{date}</span>
+		<div className="flex md:flex-row md:justify-between experience-header flex-col">
+			<h2 className="md:text-2xl font-bold text-xl">{company}</h2>
+			<span className="font-bold text-md flex items-center">{date}</span>
 			<span className="timeline-icon">
 				<CalendarIcon />
 			</span>
@@ -15,9 +15,9 @@ function ExperienceHeader({ company, date }) {
 
 function ExperienceSubheader({ role, city, country }) {
 	return (
-		<div className="flex flex-row justify-between">
-			<h3 className="text-xl font-bold text-secondary">{role}</h3>
-			<span className="font-bold">
+		<div className="flex md:flex-row md:justify-between flex-col">
+			<h3 className="md:text-xl font-bold text-secondary text-lg">{role}</h3>
+			<span className="font-bold text-md flex items-center">
 				{city}, {country}
 			</span>
 		</div>
@@ -28,7 +28,7 @@ function ExperienceDescription({ children }) {
 	return (
 		<ul className="flex flex-col gap-3 experience-description">
 			{children.map((item) => (
-				<li key={item} className="text-md">
+				<li key={item} className="text-md text-balance">
 					{item}
 				</li>
 			))}
@@ -38,8 +38,8 @@ function ExperienceDescription({ children }) {
 
 function ExperienceCard({ item, className }) {
 	return (
-		<article className={`experience-card ${className} `}>
-			<div className="experience-text-container flex flex-col gap-5">
+		<article className={`experience-card ${className}`}>
+			<div className="experience-text-container flex flex-col gap-5 md:p-8 p-4">
 				<ExperienceHeader company={item.company} date={item.date} />
 				<ExperienceSubheader
 					role={item.role}
@@ -55,7 +55,7 @@ function ExperienceCard({ item, className }) {
 export function ExperienceTimeline({ items }) {
 	return (
 		<>
-			<div className="experience-time-line">
+			<div className="experience-time-line flex gap-10 flex-col">
 				{items.map((item, index) => {
 					const indexClass = index % 2 === 0 ? 'card-left' : 'card-right'
 					return (
