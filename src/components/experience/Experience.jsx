@@ -7,7 +7,7 @@ export default function Experience() {
 	return (
 		<section
 			id="experience"
-			className="experience-container w-full pt-32 grid grid-rows-4 gap-8"
+			className="experience-container w-full grid grid-rows-4 gap-8"
 		>
 			<SectionTitle title="Experiencia" className="row-span-1" />
 
