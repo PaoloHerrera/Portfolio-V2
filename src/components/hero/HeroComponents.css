@@ -1,9 +1,10 @@
 .hero-link {
-  color: #0aff9d;
+  color: #ebecf3;
   transition: transform 0.3s ease;
 }
 
 .hero-link:hover {
+  color: #0aff9d;
   transform: scale(1.1);
 }
 
