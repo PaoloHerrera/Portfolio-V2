@@ -1,12 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-top: 80px
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -16,6 +11,7 @@ body {
 }
 
 section {
+  scroll-snap-align: center;
   height: calc(100vh - 80px);
   max-width: 1400px;
 }
