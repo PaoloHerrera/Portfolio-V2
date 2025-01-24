@@ -21,14 +21,10 @@ export default function Navbar() {
 						<NavbarLinks items={NAVBAR_ITEMS} />
 					</div>
 					{!isMenuOpen && <ToggleButton setIsMenuOpen={setIsMenuOpen} />}
-					{isMenuOpen && (
-						<>
-							<CloseButton setIsMenuOpen={setIsMenuOpen} />
-							<Sidebar>
-								<NavbarLinks items={NAVBAR_ITEMS} />
-							</Sidebar>
-						</>
-					)}
+					{isMenuOpen && <CloseButton setIsMenuOpen={setIsMenuOpen} />}
+					<Sidebar isMenuOpen={isMenuOpen}>
+						<NavbarLinks items={NAVBAR_ITEMS} />
+					</Sidebar>
 				</div>
 			</nav>
 		</header>
