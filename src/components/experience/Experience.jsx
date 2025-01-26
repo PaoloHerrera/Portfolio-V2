@@ -7,11 +7,11 @@ export default function Experience() {
 	return (
 		<section
 			id="experience"
-			className="experience-container w-full grid grid-rows-4 gap-8"
+			className="experience-container w-full"
 		>
-			<SectionTitle title="Experiencia" className="row-span-1" />
+			<SectionTitle title="Experiencia" />
 
-			<div className="w-full row-span-3 relative">
+			<div className="w-full relative md:mt-24 mt-5">
 				<ExperienceTimeline items={EXPERIENCE_ITEMS} />
 			</div>
 		</section>
