@@ -1,4 +1,3 @@
-import { clipPath } from 'motion/react-client'
 import './Sidebar.css'
 import { motion } from 'motion/react'
 

@@ -1,5 +1,5 @@
 .navbar-link:hover{
-  color: #ff8a5c;
+  color: var(--color-secondary);
 }
 
 .toggle-button {
@@ -8,7 +8,7 @@
 
 .toggle-button:hover {
   transform: scale(1.1);
-  color: #ff8a5c;
+  color: var(--color-secondary);
 }
 
 .close-button {
@@ -20,5 +20,4 @@
 
 .close-button:hover {
   transform: scale(1.1);
-  color: #ff8a5c;
 }
