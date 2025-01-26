@@ -11,7 +11,7 @@ export function HeroSubtitle({ children }) {
 }
 
 export function HeroParagraph({ children }) {
-	return <p className="xl:text-xl text-lg">{children}</p>
+	return <p className="xl:text-xl text-lg opacity-80">{children}</p>
 }
 
 export function HeroLink({ children, link }) {
@@ -35,5 +35,5 @@ export function VerticalColor() {
 }
 
 export function HeroImage({ image }) {
-	return <img src={image.url} alt={image.alt} className="hero-image" />
+	return <img src={image.url} alt={image.alt} className="hero-image sm:w-full w-auto max-h-full sm:h-auto" />
 }

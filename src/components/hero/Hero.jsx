@@ -14,9 +14,9 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="w-full flex md:flex-row flex-col-reverse justify-center md:justify-between items-center md:gap-52"
+			className="w-full flex sm:flex-row flex-col-reverse justify-center md:justify-between items-center gap-10"
 		>
-			<article className="md:w-1/2 text-left flex flex-col gap-7 w-full h-1/2 md:h-full justify-center">
+			<article className="text-left flex flex-col gap-7 w-full h-full justify-center">
 				<HeroTitle>
 					{PROFESSIONAL_INFORMATION.name} {PROFESSIONAL_INFORMATION.lastName}
 				</HeroTitle>
@@ -34,10 +34,10 @@ export default function Hero() {
 					</HeroButton>
 				</div>
 			</article>
-			<article className="md:w-1/2  relative w-full h-1/2 md:h-full">
-				<div className="max-w-96 md:max-w-full w-full h-full flex flex-col justify-center items-center">
-					<VerticalColor />
+			<article className="w-full h-full flex items-center justify-center">
+				<div className="h-full flex flex-col justify-center items-center hero-image-container relative max-w-[300px] md:max-w-full">
 					<HeroImage image={PROFESSIONAL_INFORMATION.image} />
+					<VerticalColor />
 				</div>
 			</article>
 		</section>
