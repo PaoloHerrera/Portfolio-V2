@@ -6,7 +6,7 @@ import {
 	ToggleButton,
 	CloseButton,
 } from './NavbarComponents'
-import Sidebar from './Sidebar'
+import Sidebar from './sidebar/Sidebar'
 import useMenu from '../hooks/useMenu.js'
 
 export default function Navbar() {
@@ -14,8 +14,8 @@ export default function Navbar() {
 
 	return (
 		<header>
-			<nav className="flex justify-center items-center">
-				<div className="nav-list-container flex justify-between items-center">
+			<nav className="navbar">
+				<div className="nav-list-container">
 					<NavbarBrand item={NAVBAR_BRAND} />
 					<div className="hidden lg:flex">
 						<NavbarLinks items={NAVBAR_ITEMS} />
