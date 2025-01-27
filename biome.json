@@ -19,7 +19,18 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"all": true,
+			"suspicious": {
+				"noReactSpecificProps": "off"
+			},
+			"correctness": {
+				"noUnusedImports": {
+					"fix": "none",
+					"level": "error"
+				},
+				"noUnusedVariables": "error",
+				"noUndeclaredVariables": "error"
+			}
 		}
 	},
 	"javascript": {
