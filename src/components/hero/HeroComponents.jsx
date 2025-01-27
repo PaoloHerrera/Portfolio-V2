@@ -31,9 +31,9 @@ export function HeroButton({ children, link }) {
 }
 
 export function VerticalColor() {
-	return <div className="w-1/2 -z-50 bg-secondary vertical-color" />
+	return <div className="vertical-color" />
 }
 
 export function HeroImage({ image }) {
-	return <img src={image.url} alt={image.alt} className="hero-image sm:w-full w-auto max-h-full sm:h-auto" />
+	return <img src={image.url} alt={image.alt} className="hero-image sm:w-full w-auto sm:h-auto" />
 }

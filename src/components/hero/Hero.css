@@ -1,0 +1,18 @@
+.hero-section {
+  @apply w-full flex items-center;
+  gap: 2.5rem;
+}
+
+.hero-info {
+  @apply text-left flex flex-col w-full h-full justify-center;
+  gap: 1.75rem;
+}
+
+.hero-links {
+  @apply flex justify-start items-center;
+  gap: 1.75rem;
+}
+
+.hero-image-container {
+  @apply w-full h-full flex items-center justify-center relative;
+}

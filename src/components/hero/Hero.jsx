@@ -9,20 +9,21 @@ import {
 	HeroImage,
 } from './HeroComponents'
 import { PROFESSIONAL_INFORMATION } from '../../constants'
+import './Hero.css'
 
 export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="w-full flex sm:flex-row flex-col-reverse justify-center md:justify-between items-center gap-10"
+			className="hero-section sm:flex-row flex-col-reverse justify-center sm:justify-between"
 		>
-			<article className="text-left flex flex-col gap-7 w-full h-full justify-center">
+			<article className="hero-info">
 				<HeroTitle>
 					{PROFESSIONAL_INFORMATION.name} {PROFESSIONAL_INFORMATION.lastName}
 				</HeroTitle>
 				<HeroSubtitle>{PROFESSIONAL_INFORMATION.profession}</HeroSubtitle>
 				<HeroParagraph>{PROFESSIONAL_INFORMATION.presentation}</HeroParagraph>
-				<div className="flex gap-7 justify-start items-center">
+				<div className="hero-links">
 					<HeroLink link={PROFESSIONAL_INFORMATION.github}>
 						<GithubIcon />
 					</HeroLink>
@@ -34,11 +35,9 @@ export default function Hero() {
 					</HeroButton>
 				</div>
 			</article>
-			<article className="w-full h-full flex items-center justify-center">
-				<div className="h-full flex flex-col justify-center items-center hero-image-container relative max-w-[300px] md:max-w-full">
-					<HeroImage image={PROFESSIONAL_INFORMATION.image} />
-					<VerticalColor />
-				</div>
+			<article className="hero-image-container max-w-[300px] md:max-w-full">
+				<HeroImage image={PROFESSIONAL_INFORMATION.image} />
+				<VerticalColor />
 			</article>
 		</section>
 	)
