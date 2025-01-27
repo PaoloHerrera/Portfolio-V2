@@ -7,11 +7,11 @@ export default function Experience() {
 	return (
 		<section
 			id="experience"
-			className="experience-container w-full"
+			className="experience-container"
 		>
 			<SectionTitle title="Experiencia" />
 
-			<div className="w-full relative md:mt-24 mt-5">
+			<div className="w-full relative mt-10">
 				<ExperienceTimeline items={EXPERIENCE_ITEMS} />
 			</div>
 		</section>
