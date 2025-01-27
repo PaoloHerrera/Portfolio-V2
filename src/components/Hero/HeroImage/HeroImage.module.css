@@ -1,0 +1,13 @@
+.heroImageContainer {
+  @apply w-full h-full flex items-center justify-center relative;
+}
+
+.heroImage {
+  @apply max-h-full absolute object-contain;
+  mask-image: linear-gradient(var(--color-primary) 99%, transparent);
+}
+
+.verticalColor {
+  @apply w-1/2 -z-50 h-full;
+  background-color: var(--color-secondary);
+}

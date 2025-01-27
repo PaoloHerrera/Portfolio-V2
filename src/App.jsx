@@ -1,10 +1,10 @@
 import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import Experience from './components/experience/Experience'
-import Projects from './components/projects/Projects'
+import Navbar from './components/navbar/Navbar.jsx'
+import { Hero } from './pages/HeroPage/Hero.jsx'
+import Experience from './components/experience/Experience.jsx'
+import { Projects } from './components/projects/Projects.jsx'
 
-export default function App() {
+export const App = () => {
 	return (
 		<div className="flex relative">
 			<Navbar />

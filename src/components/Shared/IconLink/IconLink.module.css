@@ -1,0 +1,10 @@
+.iconLink {
+  color: var(--color-white);
+  transition: transform 0.3s ease;
+}
+
+.iconLink:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+  transform: scale(1.1);
+}
