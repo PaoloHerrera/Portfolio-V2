@@ -1,10 +1,7 @@
 .sidebar {
-  display: flex;
-  position: fixed;
+  @apply flex fixed w-full h-screen justify-end;
   top: 0;
   right: 0;
-  width: 100%;
-  height: 100vh;
   background-color: var(--color-white);
   color: var(--color-black);
   justify-content: end;
@@ -12,14 +9,6 @@
   padding-right: 16px;
 }
 
-
-
-.sidebar-content {
-  height: 100vh;
-  display: flex;
-  padding: 20px;
-  background-color: var(--color-white);
-}
 
 .sidebar-content > ul > li > a {
   display: flex;
