@@ -19,7 +19,7 @@ export const EXPERIENCE_ITEMS = [
 	{
 		id: 1,
 		company: 'Tecbros LLC.',
-		date: 'Marzo 2019 - Marzo 2023',
+		date: 'Mar. 2019 - Mar. 2023',
 		role: 'Ingeniero de Software Fullstack',
 		city: 'Santiago',
 		country: 'Chile',
@@ -32,20 +32,20 @@ export const EXPERIENCE_ITEMS = [
 	{
 		id: 2,
 		company: 'Whitemail Singapur SPA.',
-		date: 'Septiembre 2018 - Diciembre 2022',
+		date: 'Sep. 2018 - Dic. 2022',
 		role: 'Ingeniero de Software Fullstack',
 		city: 'Santiago',
 		country: 'Chile',
 		description: [
-			'Desarrollador de un sistema de gestión de envíos masivos Emails y SMS.',
+			'Parte de un equipo que desarrolló un sistema de gestión de envíos masivos Emails y SMS.',
 			'Desarrollador de landing pages y sitios web para campañas de cobranza.',
-			'Soporte y comunicación con clientes y stakeholders.',
+			'Gestión de la base de datos.',
 		],
 	},
 	{
 		id: 3,
 		company: 'Yami SPA.',
-		date: 'Julio 2017 - Agosto 2018',
+		date: 'Jul. 2017 - Ago. 2018',
 		role: 'Ingeniero de Software Fullstack',
 		city: 'Santiago',
 		country: 'Chile',

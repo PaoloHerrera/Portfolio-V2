@@ -1,7 +1,7 @@
 import './App.css'
 import { Navbar } from './components/Shared/Navbar/Navbar.jsx'
 import { Hero } from './pages/HeroPage/Hero.jsx'
-import Experience from './components/experience/Experience.jsx'
+import { Experience } from './pages/ExperiencePage/Experience.jsx'
 import { Projects } from './components/projects/Projects.jsx'
 
 export const App = () => {

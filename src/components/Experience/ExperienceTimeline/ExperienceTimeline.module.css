@@ -1,0 +1,22 @@
+/* Posicionamiento responsive */
+@media (max-width: 1023px) {
+  .experienceTimeline::after {
+    @apply w-px h-full -z-10;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-color: var(--color-black);
+    content: '';
+  }
+}
+
+@media (min-width: 1024px) {
+  .experienceTimeline::after {
+    @apply w-px h-full -z-10;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: var(--color-black);
+    content: '';
+  }
+}

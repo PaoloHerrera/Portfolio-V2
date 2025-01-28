@@ -1,0 +1,8 @@
+.list {
+  @apply flex flex-col;
+}
+
+.listItem {
+  @apply text-balance list-disc list-inside;
+  opacity: 0.9;
+}
