@@ -36,10 +36,12 @@
   .right .timelineIcon {
     left: 0;
     transform: translateX(-50%);
+    top: 2rem;
   }
 
   .left .timelineIcon {
     right: 0;
     transform: translateX(50%);
+    top: 2rem;
   }
 }
