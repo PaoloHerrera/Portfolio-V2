@@ -17,39 +17,44 @@ const HeroParagraph = ({ children }) => {
 	return <p className="xl:text-xl text-lg opacity-90">{children}</p>
 }
 
-const HeroPersonalInfo = ({ PROFESSIONAL_INFORMATION }) => {
+const HeroPersonalInfo = ({ name, profession, presentation }) => {
 	return (
 		<>
-			<HeroTitle>
-				{PROFESSIONAL_INFORMATION.name} {PROFESSIONAL_INFORMATION.lastName}
-			</HeroTitle>
-			<HeroSubtitle>{PROFESSIONAL_INFORMATION.profession}</HeroSubtitle>
-			<HeroParagraph>{PROFESSIONAL_INFORMATION.presentation}</HeroParagraph>
+			<HeroTitle>{name}</HeroTitle>
+			<HeroSubtitle>{profession}</HeroSubtitle>
+			<HeroParagraph>{presentation}</HeroParagraph>
 		</>
 	)
 }
 
-const HeroLinks = ({ PROFESSIONAL_INFORMATION }) => {
+const HeroLinks = ({ github, email, cv }) => {
 	return (
 		<div className={styles.heroLinks}>
-			<IconLink link={PROFESSIONAL_INFORMATION.github}>
+			<IconLink link={github}>
 				<GithubIcon />
 			</IconLink>
-			<IconLink link={`mailto:${PROFESSIONAL_INFORMATION.email}`}>
+			<IconLink link={`mailto:${email}`}>
 				<MailIcon />
 			</IconLink>
-			<ButtonLink href={PROFESSIONAL_INFORMATION.cv.link} isDownload={true}>
-				{PROFESSIONAL_INFORMATION.cv.name}
+			<ButtonLink href={cv.link} isDownload={true}>
+				{cv.name}
 			</ButtonLink>
 		</div>
 	)
 }
 
 export const HeroInfo = ({ PROFESSIONAL_INFORMATION }) => {
+	const { name, lastName, profession, presentation, github, email, cv } =
+		PROFESSIONAL_INFORMATION
+
 	return (
 		<article className={styles.heroInfo}>
-			<HeroPersonalInfo PROFESSIONAL_INFORMATION={PROFESSIONAL_INFORMATION} />
-			<HeroLinks PROFESSIONAL_INFORMATION={PROFESSIONAL_INFORMATION} />
+			<HeroPersonalInfo
+				name={`${name} ${lastName}`}
+				profession={profession}
+				presentation={presentation}
+			/>
+			<HeroLinks github={github} email={email} cv={cv} />
 		</article>
 	)
 }
