@@ -1,6 +1,7 @@
 import { IconLink } from '@/components/Shared/IconLink/IconLink.jsx'
-import { GithubIcon, MailIcon } from '@/components/Shared/Icons/Icons.jsx'
+import { MailIcon } from '@/components/Shared/Icons/Icons.jsx'
 import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
+import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
 import styles from './HeroInfo.module.css'
 
 const HeroTitle = ({ children }) => {
@@ -30,11 +31,11 @@ const HeroPersonalInfo = ({ name, profession, presentation }) => {
 const HeroLinks = ({ github, email, cv }) => {
 	return (
 		<div className={styles.heroLinks}>
-			<IconLink link={github}>
-				<GithubIcon />
+			<IconLink href={github}>
+				<Github height="2em" width="2em" />
 			</IconLink>
-			<IconLink link={`mailto:${email}`}>
-				<MailIcon />
+			<IconLink href={`mailto:${email}`}>
+				<MailIcon height="2em" width="2em" />
 			</IconLink>
 			<ButtonLink href={cv.link} isDownload={true}>
 				{cv.name}

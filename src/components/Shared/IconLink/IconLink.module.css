@@ -5,6 +5,5 @@
 
 .iconLink:hover {
   cursor: pointer;
-  color: var(--color-secondary);
   transform: scale(1.1);
 }
