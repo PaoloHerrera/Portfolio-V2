@@ -1,5 +1,5 @@
 import './App.css'
-import Navbar from './components/navbar/Navbar.jsx'
+import { Navbar } from './components/Shared/Navbar/Navbar.jsx'
 import { Hero } from './pages/HeroPage/Hero.jsx'
 import Experience from './components/experience/Experience.jsx'
 import { Projects } from './components/projects/Projects.jsx'

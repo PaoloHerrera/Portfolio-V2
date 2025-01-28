@@ -2,7 +2,7 @@
   @apply flex justify-center items-center;
 }
 
-.nav-list-container {
+.navListContainer {
   @apply flex justify-between items-center w-full;
   max-width: 1200px;
 }

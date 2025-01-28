@@ -10,11 +10,11 @@
 }
 
 
-.sidebar-content > ul > li > a {
+.sidebarContent > ul > li > a {
   display: flex;
 }
 
-.sidebar-content > ul > li > a:hover {
+.sidebarContent > ul > li > a:hover {
   color: var(--color-black);
   transform: scale(1.1);
 }

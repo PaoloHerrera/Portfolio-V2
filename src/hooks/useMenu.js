@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default function useMenu() {
+export const useMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 
 	// Deshabilita el scroll cuando el menu esta abierto
@@ -25,12 +25,12 @@ export default function useMenu() {
 
 	// Cerrar el menu al navegar a otra pagina
 	useEffect(() => {
-		const changeURL = () => {
+		const changeUrl = () => {
 			setIsMenuOpen(false)
 		}
-		window.addEventListener('popstate', changeURL)
+		window.addEventListener('popstate', changeUrl)
 		return () => {
-			window.removeEventListener('popstate', changeURL)
+			window.removeEventListener('popstate', changeUrl)
 		}
 	})
 
