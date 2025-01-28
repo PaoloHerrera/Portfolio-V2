@@ -81,7 +81,7 @@ export const NAVBAR_ITEMS = [
 	},
 	{
 		id: 4,
-		name: 'Habilidades',
+		name: 'Tecnologías',
 		link: '#skills',
 	},
 	{
