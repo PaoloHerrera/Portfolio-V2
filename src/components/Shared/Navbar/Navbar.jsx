@@ -8,7 +8,7 @@ import { CloseButton } from '@/components/Shared/Button/CloseButton.jsx'
 import { MenuIcon } from '../Icons/Icons.jsx'
 import { CloseIcon } from '../Icons/Icons.jsx'
 import { Sidebar } from '../Sidebar/Sidebar.jsx'
-import { leftVariants, opacityVariants } from '@/constants/variants.js'
+import { opacityVariants } from '@/variants.js'
 
 import { motion } from 'motion/react'
 
@@ -19,7 +19,7 @@ export const Navbar = () => {
 		<header>
 			<nav className={styles.navbar}>
 				<div className={styles.navListContainer}>
-					<NavbarBrand item={NAVBAR_BRAND} variants={leftVariants} />
+					<NavbarBrand item={NAVBAR_BRAND} />
 					<motion.div
 						className="hidden lg:flex"
 						variants={opacityVariants}

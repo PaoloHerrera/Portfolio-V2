@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
+import { leftVariants as variants } from '@/variants.js'
 
-export const NavbarBrand = ({ item, variants }) => {
+export const NavbarBrand = ({ item }) => {
 	return (
 		<motion.div variants={variants} initial="initial" animate="animate">
 			<a href={item.link}>
