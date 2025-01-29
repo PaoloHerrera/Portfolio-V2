@@ -1,0 +1,7 @@
+.primary {
+  opacity: 90%;
+}
+
+.secondary {
+  color: var(--color-secondary);
+}

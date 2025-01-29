@@ -153,3 +153,24 @@ export const PROJECTS_ITEMS = [
 		technologies: ['React', 'TypeScript', 'NodeJS', 'ExpressJS'],
 	},
 ]
+
+export const CONTACTME = {
+	header: '¡Hablemos!',
+	description:
+		'Estoy disponible para trabajar en proyectos de desarrollo web. Si tienes alguna pregunta o colaboración, no dudes en contactarme.',
+	email: 'paolo.herrera.araya@gmail.com',
+	address: {
+		city: 'Santiago',
+		country: 'Chile',
+	},
+	labels: {
+		name: 'Nombre',
+		email: 'Email',
+		message: 'Mensaje',
+	},
+	placeholders: {
+		name: 'Juan Pérez',
+		email: 'juanperez@example.com',
+		message: 'Tu mensaje',
+	},
+}
