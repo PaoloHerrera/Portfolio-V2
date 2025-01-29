@@ -1,8 +1,9 @@
 import { VerticalColor } from './VerticalColor.jsx'
 import styles from './HeroImage.module.css'
 import { motion } from 'motion/react'
+import { opacityVariants as variants } from '@/variants.js'
 
-export const HeroImage = ({ image, variants }) => {
+export const HeroImage = ({ image }) => {
 	return (
 		<motion.article
 			className={`${styles.heroImageContainer} max-w-[300px] md:max-w-full`}

@@ -4,6 +4,7 @@ import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
 import styles from './HeroInfo.module.css'
 import { motion } from 'motion/react'
+import { leftVariants as variants } from '@/variants.js'
 
 const HeroTitle = ({ children }) => {
 	return <h1 className="md:text-6xl text-4xl font-bold">{children}</h1>
@@ -45,7 +46,7 @@ const HeroLinks = ({ github, email, cv }) => {
 	)
 }
 
-export const HeroInfo = ({ PROFESSIONAL_INFORMATION, variants }) => {
+export const HeroInfo = ({ PROFESSIONAL_INFORMATION }) => {
 	const { name, lastName, profession, presentation, github, email, cv } =
 		PROFESSIONAL_INFORMATION
 
