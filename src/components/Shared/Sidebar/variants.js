@@ -1,4 +1,5 @@
 export const variants = {
+	initial: { clipPath: 'circle(0% at right 0)' },
 	open: {
 		clipPath: 'circle(200% at right 0)',
 		transition: {

@@ -7,6 +7,7 @@ export const Sidebar = ({ children, isMenuOpen }) => {
 	return (
 		<motion.aside
 			className={styles.sidebar}
+			initial="initial"
 			animate={isMenuOpen ? 'open' : 'close'}
 			variants={variants}
 		>
