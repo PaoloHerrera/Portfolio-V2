@@ -3,9 +3,10 @@ import { MailIcon } from '@/components/Shared/Icons/Icons.jsx'
 import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
 import styles from './HeroInfo.module.css'
+import { motion } from 'motion/react'
 
 const HeroTitle = ({ children }) => {
-	return <h1 className="xl:text-6xl text-4xl font-bold">{children}</h1>
+	return <h1 className="md:text-6xl text-4xl font-bold">{children}</h1>
 }
 
 const HeroSubtitle = ({ children }) => {
@@ -44,18 +45,23 @@ const HeroLinks = ({ github, email, cv }) => {
 	)
 }
 
-export const HeroInfo = ({ PROFESSIONAL_INFORMATION }) => {
+export const HeroInfo = ({ PROFESSIONAL_INFORMATION, variants }) => {
 	const { name, lastName, profession, presentation, github, email, cv } =
 		PROFESSIONAL_INFORMATION
 
 	return (
-		<article className={styles.heroInfo}>
+		<motion.article
+			className={styles.heroInfo}
+			variants={variants}
+			initial="initial"
+			animate="animate"
+		>
 			<HeroPersonalInfo
 				name={`${name} ${lastName}`}
 				profession={profession}
 				presentation={presentation}
 			/>
 			<HeroLinks github={github} email={email} cv={cv} />
-		</article>
+		</motion.article>
 	)
 }
