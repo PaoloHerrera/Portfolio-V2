@@ -21,7 +21,7 @@ import { Nextjs } from '@/components/Shared/Icons/Frontend/Nextjs.jsx'
 import { Jest } from '@/components/Shared/Icons/Tools/Jest.jsx'
 import { Playwright } from '@/components/Shared/Icons/Tools/Playwright.jsx'
 
-export const frontend = {
+export const FRONTEND = {
 	name: 'Frontend',
 	items: [
 		{ id: 1, name: 'HTML5', icon: HTML5 },
@@ -34,7 +34,7 @@ export const frontend = {
 	],
 }
 
-export const backend = {
+export const BACKEND = {
 	name: 'Backend',
 	items: [
 		{ id: 1, name: 'Node.js', icon: Nodejs },
@@ -45,7 +45,7 @@ export const backend = {
 	],
 }
 
-export const tools = {
+export const TOOLS = {
 	name: 'Herramientas',
 	items: [
 		{ id: 1, name: 'Git', icon: Git },
@@ -55,7 +55,7 @@ export const tools = {
 	],
 }
 
-export const learning = {
+export const LEARNING = {
 	name: 'Aprendiendo',
 	items: [
 		{ id: 1, name: 'Next.js', icon: Nextjs },
