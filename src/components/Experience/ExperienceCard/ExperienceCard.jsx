@@ -29,10 +29,7 @@ export const ExperienceCard = ({ item, position }) => {
 		<article
 			className={`${styles.experienceCard} ${styles[position]} w-full lg:w-1/2`}
 		>
-			<SpotlightCard
-				spotlightColor="rgba(255, 255, 255, 0.25)"
-				className="min-h-[320px] p-8 flex flex-col gap-5"
-			>
+			<SpotlightCard className="min-h-[320px] p-8 flex flex-col gap-5">
 				<ExperienceHeader item={item} />
 
 				<ExperienceSubheader item={item} />

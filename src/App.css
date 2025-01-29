@@ -12,7 +12,7 @@ body {
 
 section {
   @apply w-full;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   min-height: calc(100vh - 80px);
   max-width: 1200px;
 }

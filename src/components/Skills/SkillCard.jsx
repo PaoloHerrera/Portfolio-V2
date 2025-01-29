@@ -15,7 +15,7 @@ const SkillContent = ({ skills }) => {
 
 export const SkillCard = ({ name, skills }) => {
 	return (
-		<article className="w-full relative min-h-[300px]">
+		<article className="w-full">
 			<SpotlightCard className="h-full">
 				<div className="flex flex-col gap-14 items-center justify-center h-full">
 					<h3 className="font-bold lg:text-4xl text-2xl">{name}</h3>
