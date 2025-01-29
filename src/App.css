@@ -1,5 +1,4 @@
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
@@ -12,7 +11,6 @@ body {
 
 section {
   @apply w-full;
-  scroll-snap-align: start;
   min-height: calc(100vh - 80px);
   max-width: 1200px;
 }
