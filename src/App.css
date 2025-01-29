@@ -1,4 +1,5 @@
 html {
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
@@ -11,8 +12,15 @@ body {
 
 section {
   @apply w-full;
+  scroll-snap-align: start;
+  margin-top: 100px;
   min-height: calc(100vh - 80px);
   max-width: 1200px;
+  scroll-snap-stop: always;
+}
+
+section#home {
+  margin-top: 0 !important;
 }
 
 nav {
