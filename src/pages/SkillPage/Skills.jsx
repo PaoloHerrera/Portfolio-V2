@@ -1,9 +1,6 @@
 import { PageTitle } from '@/pages/PageTitle.jsx'
-
 import { SkillCard } from '@/components/Skills/SkillCard.jsx'
-
 import { frontend, backend, tools, learning } from './skills.js'
-
 import styles from './Skills.module.css'
 
 export const Skills = () => {
