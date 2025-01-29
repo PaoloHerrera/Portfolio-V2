@@ -4,6 +4,7 @@ import { Hero } from './pages/HeroPage/Hero.jsx'
 import { Experience } from './pages/ExperiencePage/Experience.jsx'
 // import { Projects } from './components/projects/Projects.jsx'
 import { Skills } from './pages/SkillPage/Skills.jsx'
+import { Contact } from './pages/ContactPage/Contact.jsx'
 
 export const App = () => {
 	return (
@@ -14,6 +15,7 @@ export const App = () => {
 				<Experience title="Experiencia" />
 				{/* <Projects /> */}
 				<Skills title="Tecnologías" />
+				<Contact title="Contacto" />
 			</main>
 		</div>
 	)
