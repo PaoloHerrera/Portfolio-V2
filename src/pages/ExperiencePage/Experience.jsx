@@ -6,10 +6,7 @@ export const Experience = ({ title }) => {
 	return (
 		<section id="experience">
 			<PageTitle title={title} />
-
-			<div className="w-full relative mt-10">
-				<ExperienceTimeline items={EXPERIENCE_ITEMS} />
-			</div>
+			<ExperienceTimeline items={EXPERIENCE_ITEMS} />
 		</section>
 	)
 }

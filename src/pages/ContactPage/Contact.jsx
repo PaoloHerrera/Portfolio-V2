@@ -11,7 +11,7 @@ export const Contact = ({ title }) => {
 		<section id="contact">
 			<PageTitle title={title} />
 
-			<article className="flex flex-col items-center md:flex-row gap-10 mt-10 justify-between">
+			<article className="flex flex-col items-center md:flex-row gap-14 mt-20 justify-between">
 				<ContactText
 					header={header}
 					description={description}

@@ -7,7 +7,7 @@ export const Skills = ({ title }) => {
 		<section id="skills">
 			<PageTitle title={title} />
 
-			<div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-14 mt-10">
+			<div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-14 mt-20">
 				<SkillCard name={FRONTEND.name} skills={FRONTEND.items} />
 				<SkillCard name={BACKEND.name} skills={BACKEND.items} />
 				<SkillCard name={TOOLS.name} skills={TOOLS.items} />
