@@ -8,6 +8,7 @@
   height: 2.5rem;
   border: 2px solid var(--color-secondary);
   background-color: var(--color-black);
+  /* transition: border-color 0.3s ease, transform 0.3s ease; */
 }
 
 /* Posicionamiento responsive */

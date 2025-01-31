@@ -8,6 +8,7 @@ export const TimelineLine = ({ scrollYProgress }) => {
 			initial={{ scaleY: 0 }}
 			style={{
 				scaleY: scrollYProgress,
+				transformOrigin: 'top',
 			}}
 		/>
 	)
