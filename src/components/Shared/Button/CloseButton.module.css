@@ -1,9 +1,0 @@
-.closeButton {
-  cursor: pointer;
-  z-index: 1000;
-  color: #222;
-}
-
-.closeButton:hover {
-  transform: scale(1.1);
-}

@@ -12,7 +12,7 @@ export const variants = {
 	close: {
 		clipPath: 'circle(0% at right 0)',
 		transition: {
-			delay: 0.3,
+			delay: 0.2,
 			type: 'spring',
 			stiffness: 400,
 			damping: 40,

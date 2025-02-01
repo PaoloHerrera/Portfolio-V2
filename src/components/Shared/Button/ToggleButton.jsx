@@ -6,9 +6,7 @@ export const ToggleButton = ({ setIsMenuOpen, children }) => {
 			<button
 				type="button"
 				className={`${styles.toggleButton} flex lg:hidden`}
-				onClick={() => {
-					setIsMenuOpen(true)
-				}}
+				onClick={setIsMenuOpen}
 				aria-label="Abrir menu"
 			>
 				{children}

@@ -4,9 +4,8 @@ import { useMenu } from '@/hooks/useMenu.js'
 import { NavbarBrand } from './NavbarBrand.jsx'
 import { NavbarLinks } from './NavbarLinks.jsx'
 import { ToggleButton } from '@/components/Shared/Button/ToggleButton.jsx'
-import { CloseButton } from '@/components/Shared/Button/CloseButton.jsx'
-import { MenuIcon } from '../Icons/Icons.jsx'
-import { CloseIcon } from '../Icons/Icons.jsx'
+
+import { ToggleIcon } from '../Icons/Animate/ToggleIcon.jsx'
 import { Sidebar } from '../Sidebar/Sidebar.jsx'
 import { opacityVariants } from '@/variants.js'
 
@@ -28,16 +27,10 @@ export const Navbar = () => {
 					>
 						<NavbarLinks items={NAVBAR_ITEMS} />
 					</motion.div>
-					{!isMenuOpen && (
-						<ToggleButton setIsMenuOpen={setIsMenuOpen}>
-							<MenuIcon />
-						</ToggleButton>
-					)}
-					{isMenuOpen && (
-						<CloseButton setIsMenuOpen={setIsMenuOpen}>
-							<CloseIcon />
-						</CloseButton>
-					)}
+
+					<ToggleButton setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
+						<ToggleIcon isOpen={isMenuOpen} />
+					</ToggleButton>
 					<Sidebar isMenuOpen={isMenuOpen}>
 						<NavbarLinks items={NAVBAR_ITEMS} />
 					</Sidebar>
