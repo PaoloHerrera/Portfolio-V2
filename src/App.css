@@ -14,10 +14,10 @@ body {
 section {
   @apply w-full;
   scroll-snap-align: start;
-  margin-top: 100px;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   max-width: 1200px;
   scroll-snap-stop: always;
+  padding-top: 80px;
 }
 
 section#home {
@@ -35,7 +35,9 @@ nav {
 }
 
 main {
-  position: absolute;
-  top: 80px;
+  padding: 0 24px;
+}
+
+footer {
   padding: 0 24px;
 }
