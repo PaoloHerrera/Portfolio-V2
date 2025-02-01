@@ -1,4 +1,3 @@
-import { VerticalColor } from './VerticalColor.jsx'
 import styles from './HeroImage.module.css'
 import { motion } from 'motion/react'
 import { opacityVariants as variants } from '@/variants.js'
@@ -16,7 +15,7 @@ export const HeroImage = ({ image }) => {
 				alt={image.alt}
 				className={`${styles.heroImage} sm:w-full w-auto sm:h-auto`}
 			/>
-			<VerticalColor style={styles.verticalColor} />
+			<div className={styles.verticalColor} />
 		</motion.article>
 	)
 }
