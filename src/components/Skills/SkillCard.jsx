@@ -1,4 +1,5 @@
 import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.jsx'
+import { motion } from 'motion/react'
 
 const SkillContent = ({ skills }) => {
 	return (
@@ -15,13 +16,19 @@ const SkillContent = ({ skills }) => {
 
 export const SkillCard = ({ name, skills }) => {
 	return (
-		<article className="w-full">
+		<motion.article
+			className="w-full"
+			initial={{ opacity: 0, y: 50 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5, ease: 'easeInOut' }}
+			viewport={{ once: false, margin: '0px 0px -110px 0px' }}
+		>
 			<SpotlightCard className="h-full">
 				<div className="flex flex-col gap-14 items-center justify-center h-full">
 					<h3 className="font-bold lg:text-4xl text-2xl">{name}</h3>
 					<SkillContent skills={skills} />
 				</div>
 			</SpotlightCard>
-		</article>
+		</motion.article>
 	)
 }
