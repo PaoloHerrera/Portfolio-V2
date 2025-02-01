@@ -10,7 +10,7 @@ export const ProjectCard = ({ item }) => {
 
 	return (
 		<motion.article
-			className="flex flex-col gap-4 w-full"
+			className="flex flex-col gap-4 w-full h-full"
 			initial={{ scale: 0.5, y: 50 }}
 			whileInView={{ scale: 1, y: 0 }}
 			transition={{ duration: 0.3, ease: 'easeInOut' }}
@@ -37,11 +37,11 @@ export const ProjectCard = ({ item }) => {
 					</div>
 
 					<footer className="flex flex-wrap gap-5 justify-center">
-						<ButtonLink href={item.github} variant="secondary">
+						<ButtonLink href={item.github} variant="primary">
 							<Github height="1.5rem" width="1.5rem" />
 							<span className="hidden sm:inline">Code</span>
 						</ButtonLink>
-						<ButtonLink href={item.link} variant="secondary" className="">
+						<ButtonLink href={item.link} variant="primary">
 							<LinkIcon height="1.5rem" width="1.5rem" />
 							<span className="hidden sm:inline">Preview </span>
 						</ButtonLink>
