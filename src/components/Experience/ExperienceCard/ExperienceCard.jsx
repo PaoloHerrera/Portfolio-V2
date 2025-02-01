@@ -10,7 +10,7 @@ const ExperienceHeader = ({ item }) => {
 	return (
 		<div className="flex flex-col md:flex-row md:justify-between gap-4">
 			<Title>{item.company}</Title>
-			<span className="font-bold text-md flex items-center">{item.date}</span>
+			<span className="font-bold flex items-center">{item.date}</span>
 		</div>
 	)
 }
@@ -19,7 +19,7 @@ const ExperienceSubheader = ({ item }) => {
 	return (
 		<div className="flex flex-col md:flex-row md:justify-between mb-5 gap-3">
 			<Title variant="secondary">{item.role}</Title>
-			<span className="font-bold text-md flex items-center">
+			<span className="font-bold flex items-center">
 				{item.city}, {item.country}
 			</span>
 		</div>
