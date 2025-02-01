@@ -5,7 +5,7 @@ const SkillContent = ({ skills }) => {
 		<div className="w-full flex flex-row gap-14 justify-center flex-wrap h-full items-center">
 			{skills.map((skill) => (
 				<div className="flex flex-col gap-2 items-center" key={skill.id}>
-					<skill.icon height="4em" width="4em" />
+					<skill.icon height="3rem" width="3rem" />
 					<span className="text-sm">{skill.name}</span>
 				</div>
 			))}

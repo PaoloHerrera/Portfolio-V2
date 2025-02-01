@@ -11,6 +11,7 @@ import { Expressjs } from '@/components/Shared/Icons/Backend/Expressjs.jsx'
 import { MySQL } from '@/components/Shared/Icons/Backend/MySQL.jsx'
 import { Php } from '@/components/Shared/Icons/Backend/Php.jsx'
 import { Laravel } from '@/components/Shared/Icons/Backend/Laravel.jsx'
+import { MongoDB } from '@/components/Shared/Icons/Backend/MongoDB.jsx'
 
 import { Git } from '@/components/Shared/Icons/Tools/Git.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
@@ -20,6 +21,7 @@ import { Docker } from '@/components/Shared/Icons/Tools/Docker.jsx'
 import { Nextjs } from '@/components/Shared/Icons/Frontend/Nextjs.jsx'
 import { Jest } from '@/components/Shared/Icons/Tools/Jest.jsx'
 import { Playwright } from '@/components/Shared/Icons/Tools/Playwright.jsx'
+import { Figma } from '@/components/Shared/Icons/Tools/Figma.jsx'
 
 export const FRONTEND = {
 	name: 'Frontend',
@@ -42,6 +44,7 @@ export const BACKEND = {
 		{ id: 3, name: 'MySQL', icon: MySQL },
 		{ id: 4, name: 'PHP', icon: Php },
 		{ id: 5, name: 'Laravel', icon: Laravel },
+		{ id: 6, name: 'MongoDB', icon: MongoDB },
 	],
 }
 
@@ -61,5 +64,6 @@ export const LEARNING = {
 		{ id: 1, name: 'Next.js', icon: Nextjs },
 		{ id: 2, name: 'Jest', icon: Jest },
 		{ id: 3, name: 'Playwright', icon: Playwright },
+		{ id: 4, name: 'Figma', icon: Figma },
 	],
 }
