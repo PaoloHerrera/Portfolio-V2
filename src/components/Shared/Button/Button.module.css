@@ -6,8 +6,8 @@
 }
 
 .primary {
-  background-color: var(--color-secondary);
-  color: #222;
+  background-color: transparent;
+  color: var(--color-secondary);
   border: 1px solid var(--color-secondary);
 }
 
@@ -18,7 +18,8 @@
 }
 
 .primary:hover {
-  background-color: transparent;
-  color: var(--color-white);
+  background-color: var(--color-secondary);
+  color: #222;
+  border: 1px solid var(--color-secondary);
   transform: scale(1.1);
 }

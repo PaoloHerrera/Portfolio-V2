@@ -18,12 +18,19 @@ export const ButtonLink = ({
 	)
 }
 
-export const Button = ({ children, variant = 'primary', type, onClick }) => {
+export const Button = ({
+	children,
+	variant = 'primary',
+	type,
+	onClick,
+	disabled = false,
+}) => {
 	return (
 		<button
 			className={`${styles.button} ${styles[variant]}`}
 			type={type}
 			onClick={onClick}
+			disabled={disabled}
 		>
 			{children}
 		</button>

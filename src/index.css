@@ -3,8 +3,9 @@
 @theme {
   --color-primary: #111;
   --color-black: #222;
-  --color-secondary: #f5c542;
+  --color-secondary: #2191fb;
   --color-white: #ebecf3;
+  --color-error: #f41f39;
 }
 
 ::-webkit-scrollbar {

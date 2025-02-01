@@ -34,10 +34,10 @@ const HeroLinks = ({ github, email, cv }) => {
 	return (
 		<div className={styles.heroLinks}>
 			<IconLink href={github}>
-				<Github height="2em" width="2em" />
+				<Github height="1.5rem" width="1.5rem" />
 			</IconLink>
 			<IconLink href={`mailto:${email}`}>
-				<MailIcon height="2em" width="2em" />
+				<MailIcon height="1.5rem" width="1.5rem" />
 			</IconLink>
 			<ButtonLink href={cv.link} isDownload={true}>
 				{cv.name}
