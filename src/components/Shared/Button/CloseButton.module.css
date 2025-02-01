@@ -2,7 +2,6 @@
   cursor: pointer;
   z-index: 1000;
   color: #222;
-  margin-right: 16px;
 }
 
 .closeButton:hover {
