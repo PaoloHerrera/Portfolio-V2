@@ -96,6 +96,66 @@ export const NAVBAR_ITEMS = [
 	},
 ]
 
+import { TailwindCSS as tailwindCssIcon } from '@/components/Shared/Icons/Frontend/TailwindCSS.jsx'
+
+import { React as ReactIcon } from '@/components/Shared/Icons/Frontend/React.jsx'
+import { TypeScript as TypeScriptIcon } from '@/components/Shared/Icons/Frontend/TypeScript.jsx'
+
+import { Nodejs as NodejsIcon } from '@/components/Shared/Icons/Backend/Nodejs.jsx'
+import { Expressjs as ExpressjsIcon } from '@/components/Shared/Icons/Backend/Expressjs.jsx'
+import { MySQL as mySqlIcon } from '@/components/Shared/Icons/Backend/MySQL.jsx'
+import { MongoDB as mongoDbIcon } from '@/components/Shared/Icons/Backend/MongoDB.jsx'
+
+import { Nextjs as NextjsIcon } from '@/components/Shared/Icons/Frontend/Nextjs.jsx'
+
+const NEXTJS = {
+	name: 'NextJS',
+	icon: NextjsIcon,
+	bgcolor: 'bg-[#1f1f1f]',
+}
+
+const TYPESCRIPT = {
+	name: 'TypeScript',
+	icon: TypeScriptIcon,
+	bgcolor: 'bg-[#003159]',
+}
+
+const TAILWINDCSS = {
+	name: 'TailwindCSS',
+	icon: tailwindCssIcon,
+	bgcolor: 'bg-[#005952]',
+}
+
+const REACT = {
+	name: 'React',
+	icon: ReactIcon,
+	bgcolor: 'bg-[#61DAFB]',
+}
+
+const NODEJS = {
+	name: 'NodeJS',
+	icon: NodejsIcon,
+	bgcolor: 'bg-[#75a044]',
+}
+
+const EXPRESSJS = {
+	name: 'ExpressJS',
+	icon: ExpressjsIcon,
+	bgcolor: 'bg-[#171d4f]',
+}
+
+const MYSQL = {
+	name: 'MySQL',
+	icon: mySqlIcon,
+	bgcolor: 'bg-[#5180c3]',
+}
+
+const MONGODB = {
+	name: 'MongoDB',
+	icon: mongoDbIcon,
+	bgcolor: 'bg-[#45a044]',
+}
+
 export const PROJECTS_ITEMS = [
 	{
 		id: 1,
@@ -112,12 +172,30 @@ export const PROJECTS_ITEMS = [
 		description3:
 			'El sistema fue desarrollado primero en React y luego migrado a NextJS, esto es debido a que NextJS ofrece un mejor rendimiento y mejora en el SEO debido a su optimización avanzada. Este proyecto demuestra mi capacidad para crear soluciones completas, priorizando tanto la experiencia de usuario como la eficiencia técnica.',
 		technologies: [
-			'NextJS',
-			'TypeScript',
-			'TailwindCSS',
-			'NodeJS',
-			'MongoDB',
-			'ExpressJS',
+			{
+				id: 1,
+				...NEXTJS,
+			},
+			{
+				id: 2,
+				...TYPESCRIPT,
+			},
+			{
+				id: 3,
+				...TAILWINDCSS,
+			},
+			{
+				id: 4,
+				...NODEJS,
+			},
+			{
+				id: 5,
+				...MONGODB,
+			},
+			{
+				id: 6,
+				...EXPRESSJS,
+			},
 		],
 	},
 	{
@@ -134,7 +212,33 @@ export const PROJECTS_ITEMS = [
 			'El sistema prioriza la seguridad rendimiento desde su núcleo: integra Google reCAPTCHA v3 para bloquear bots, limita usuarios a 3 URLs gratuitas para evitar abusos, y bloquea automáticamente URLs sospechosas mediante un algoritmo propio que analiza enlaces sospechosos. Además, utiliza Cloudflare para mitigar DDoS y garantizar escalabilidad. Este enfoque refleja mi capacidad para desarrollar soluciones técnicas eficientes, combinando protección proactiva con rendimiento robusto.',
 		description3:
 			'En un futuro, planeo agregar funcionalidades claves como la creación de URLs personalizadas, la caducidad de URLs por fecha definida por el usuario y un dashboard de administración para la gestión y monitoreo de URLs.',
-		technologies: ['React', 'TailwindCSS', 'NodeJS', 'MySQL', 'ExpressJS'],
+		technologies: [
+			{
+				id: 1,
+				...REACT,
+			},
+			{
+				id: 2,
+				...TYPESCRIPT,
+			},
+			{
+				id: 3,
+				...TAILWINDCSS,
+			},
+			{
+				id: 4,
+				...NODEJS,
+			},
+			{
+				id: 5,
+				...MYSQL,
+			},
+
+			{
+				id: 6,
+				...EXPRESSJS,
+			},
+		],
 	},
 	{
 		id: 3,
@@ -142,7 +246,7 @@ export const PROJECTS_ITEMS = [
 		link: 'https://google-clone-paolo.vercel.app/',
 		github: 'https://github.com/PaoloHerrera/google-translate-clone',
 		image:
-			'https://images.pexels.com/photos/29933587/pexels-photo-29933587/free-photo-of-montana-schynige-platte.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+			'https://images.pexels.com/photos/30426849/pexels-photo-30426849/free-photo-of-escena-urbana-en-bicicleta-en-blanco-y-negro.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
 		alt: 'Imagen de la página de Google Translate Clone',
 		description:
 			'Este es un proyecto que es un traductor basado en Google Translate, desarrollado en el curso de React de @midudev. El objetivo principal fue aprender a usar TypeScript, React y la API de OpenAI.',
@@ -150,7 +254,28 @@ export const PROJECTS_ITEMS = [
 			'El sistema incorpora un sitema de debounce para evitar la carga excesiva de la API, incorporación de 9 idiomas y un sistema de lectura de voz para los textos traducidos.',
 		description3:
 			'Para el futuro, se planea agregar funcionalidades como la traducción por voz, el historial de traducciones y la capacidad de traducir textos en diferentes idiomas a la vez.',
-		technologies: ['React', 'TypeScript', 'NodeJS', 'ExpressJS'],
+		technologies: [
+			{
+				id: 1,
+				...REACT,
+			},
+			{
+				id: 2,
+				...TYPESCRIPT,
+			},
+			{
+				id: 3,
+				...TAILWINDCSS,
+			},
+			{
+				id: 4,
+				...NODEJS,
+			},
+			{
+				id: 5,
+				...MONGODB,
+			},
+		],
 	},
 ]
 
