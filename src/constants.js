@@ -109,7 +109,7 @@ import { MongoDB as mongoDbIcon } from '@/components/Shared/Icons/Backend/MongoD
 import { Nextjs as NextjsIcon } from '@/components/Shared/Icons/Frontend/Nextjs.jsx'
 
 const NEXTJS = {
-	name: 'NextJS',
+	name: 'Next.js',
 	icon: NextjsIcon,
 	bgcolor: 'bg-[#1f1f1f]',
 }
@@ -129,17 +129,17 @@ const TAILWINDCSS = {
 const REACT = {
 	name: 'React',
 	icon: ReactIcon,
-	bgcolor: 'bg-[#61DAFB]',
+	bgcolor: 'bg-[#23272f]',
 }
 
 const NODEJS = {
-	name: 'NodeJS',
+	name: 'Node.js',
 	icon: NodejsIcon,
 	bgcolor: 'bg-[#75a044]',
 }
 
 const EXPRESSJS = {
-	name: 'ExpressJS',
+	name: 'Express',
 	icon: ExpressjsIcon,
 	bgcolor: 'bg-[#171d4f]',
 }
