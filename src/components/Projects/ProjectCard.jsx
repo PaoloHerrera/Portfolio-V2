@@ -52,7 +52,7 @@ export const ProjectCard = ({ item }) => {
 					<img
 						src={item.image}
 						alt={item.alt}
-						className="w-full object-cover h-full"
+						className="w-full object-cover h-full rounded-lg"
 					/>
 				</div>
 			</div>
