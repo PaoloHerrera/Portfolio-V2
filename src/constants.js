@@ -135,7 +135,7 @@ const REACT = {
 const NODEJS = {
 	name: 'Node.js',
 	icon: NodejsIcon,
-	bgcolor: 'bg-[#75a044]',
+	bgcolor: 'bg-[#0d121c]',
 }
 
 const EXPRESSJS = {
@@ -147,13 +147,13 @@ const EXPRESSJS = {
 const MYSQL = {
 	name: 'MySQL',
 	icon: mySqlIcon,
-	bgcolor: 'bg-[#5180c3]',
+	bgcolor: 'bg-[#3e8c93]',
 }
 
 const MONGODB = {
 	name: 'MongoDB',
 	icon: mongoDbIcon,
-	bgcolor: 'bg-[#45a044]',
+	bgcolor: 'bg-[#001e2b]',
 }
 
 export const PROJECTS_ITEMS = [
