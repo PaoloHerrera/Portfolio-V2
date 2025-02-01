@@ -8,7 +8,7 @@ export const Contact = ({ title }) => {
 	const { labels, placeholders } = CONTACTME
 
 	return (
-		<section id="contact">
+		<section id="contact" className="mb-10">
 			<PageTitle title={title} />
 
 			<article className="flex flex-col items-center md:flex-row gap-14 mt-20 justify-between">
