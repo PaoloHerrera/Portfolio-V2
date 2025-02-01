@@ -1,6 +1,5 @@
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
 import { LinkIcon } from '@/components/Shared/Icons/Icons.jsx'
-import styles from './ProjectCard.module.css'
 import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
 import { Chip } from '@/components/Shared/Chip/Chip.jsx'
 
@@ -11,7 +10,7 @@ export const ProjectCard = ({ item }) => {
 
 	return (
 		<motion.article
-			className={`${styles.projectCard} flex flex-col gap-4 w-full`}
+			className="flex flex-col gap-4 w-full"
 			initial={{ scale: 0.5, y: 50 }}
 			whileInView={{ scale: 1, y: 0 }}
 			transition={{ duration: 0.3, ease: 'easeInOut' }}
