@@ -7,18 +7,22 @@ import { Skills } from './pages/SkillPage/Skills.jsx'
 import { Contact } from './pages/ContactPage/Contact.jsx'
 import { Footer } from './components/Shared/Footer/Footer.jsx'
 
+import { LangProvider } from './context/langProvider.jsx'
+
 export const App = () => {
 	return (
 		<div className="relative h-full">
-			<Navbar />
-			<main className="flex flex-col justify-center items-center w-full">
-				<Hero />
-				<Experience title="Experiencia" />
-				<Projects title="Proyectos" />
-				<Skills title="Tecnologías" />
-				<Contact title="Contacto" />
-			</main>
-			<Footer />
+			<LangProvider>
+				<Navbar />
+				<main className="flex flex-col justify-center items-center w-full">
+					<Hero />
+					<Experience />
+					<Projects />
+					<Skills />
+					<Contact />
+				</main>
+				<Footer />
+			</LangProvider>
 		</div>
 	)
 }
