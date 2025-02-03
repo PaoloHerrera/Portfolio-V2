@@ -36,13 +36,8 @@ export const translations = {
 			info: CONTACT_ME.en,
 		},
 		footer: {
-			name: PERSONAL_INFO.name,
-			lastName: PERSONAL_INFO.lastName,
-			year: new Date().getFullYear(),
 			profession: PERSONAL_INFO.profession.en,
 			legend: 'Built with React, TailwindCSS and with ❤️',
-			github: PERSONAL_INFO.github,
-			email: PERSONAL_INFO.email,
 		},
 	},
 	es: {
@@ -76,13 +71,8 @@ export const translations = {
 			info: CONTACT_ME.es,
 		},
 		footer: {
-			name: PERSONAL_INFO.name,
-			lastName: PERSONAL_INFO.lastName,
-			year: new Date().getFullYear(),
 			profession: PERSONAL_INFO.profession.es,
 			legend: 'Hecho con React, TailwindCSS y con ❤️',
-			github: PERSONAL_INFO.github,
-			email: PERSONAL_INFO.email,
 		},
 	},
 }
