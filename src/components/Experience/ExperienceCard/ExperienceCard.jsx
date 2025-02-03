@@ -6,26 +6,6 @@ import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.j
 
 import { motion } from 'motion/react'
 
-const ExperienceHeader = ({ item }) => {
-	return (
-		<div className="flex flex-col md:flex-row md:justify-between gap-4">
-			<Title>{item.company}</Title>
-			<span className="font-bold flex items-center">{item.date}</span>
-		</div>
-	)
-}
-
-const ExperienceSubheader = ({ item }) => {
-	return (
-		<div className="flex flex-col md:flex-row md:justify-between mb-5 gap-3">
-			<Title variant="secondary">{item.role}</Title>
-			<span className="font-bold flex items-center">
-				{item.city}, {item.country}
-			</span>
-		</div>
-	)
-}
-
 export const ExperienceCard = ({ item, position }) => {
 	return (
 		<article
@@ -39,9 +19,17 @@ export const ExperienceCard = ({ item, position }) => {
 				viewport={{ once: false, margin: '0px 0px -110px 0px' }}
 			>
 				<SpotlightCard className="min-h-[320px] p-8 flex flex-col gap-5">
-					<ExperienceHeader item={item} />
+					<div className="flex flex-col md:flex-row md:justify-between gap-4">
+						<Title>{item.company}</Title>
+						<span className="font-bold flex items-center">{item.date}</span>
+					</div>
 
-					<ExperienceSubheader item={item} />
+					<div className="flex flex-col md:flex-row md:justify-between mb-5 gap-3">
+						<Title variant="secondary">{item.role}</Title>
+						<span className="font-bold flex items-center">
+							{item.city}, {item.country}
+						</span>
+					</div>
 
 					<List items={item.description} />
 				</SpotlightCard>
