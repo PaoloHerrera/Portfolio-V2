@@ -2,24 +2,25 @@ import { HeroInfo } from '@/components/Hero/HeroInfo/HeroInfo.jsx'
 import { HeroImage } from '@/components/Hero/HeroImage/HeroImage.jsx'
 import { useTranslation } from '@/hooks/useTranslation.js'
 import styles from './Hero.module.css'
+import { PERSONAL_INFO } from '@/constants/personalInfo.js'
 
 export const Hero = () => {
 	const { translate } = useTranslation()
 
 	const heroData = {
-		name: translate('hero.name'),
-		lastName: translate('hero.lastName'),
+		name: PERSONAL_INFO.name,
+		lastName: PERSONAL_INFO.lastName,
 		profession: translate('hero.profession'),
 		description: translate('hero.description'),
-		github: translate('hero.github'),
-		email: translate('hero.email'),
+		github: PERSONAL_INFO.github,
+		email: PERSONAL_INFO.email,
 		cv: {
 			name: translate('hero.cv.name'),
-			link: translate('hero.cv.link'),
+			link: PERSONAL_INFO.cv.link,
 		},
 		image: {
-			url: translate('hero.image.url'),
-			alt: translate('hero.image.alt'),
+			url: PERSONAL_INFO.image.url,
+			alt: translate('hero.alt'),
 		},
 	}
 

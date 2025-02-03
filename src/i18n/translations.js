@@ -7,7 +7,14 @@ import { CONTACT_ME } from '../constants/contact.js'
 export const translations = {
 	en: {
 		navbar: NAVBAR_ITEMS.en,
-		hero: PERSONAL_INFO.en,
+		hero: {
+			profession: PERSONAL_INFO.profession.en,
+			description: PERSONAL_INFO.description.en,
+			alt: PERSONAL_INFO.image.alt.en,
+			cv: {
+				name: PERSONAL_INFO.cv.name.en,
+			},
+		},
 		experience: {
 			title: 'Experience',
 			jobs: EXPERIENCE_ITEMS.en,
@@ -29,18 +36,25 @@ export const translations = {
 			info: CONTACT_ME.en,
 		},
 		footer: {
-			name: PERSONAL_INFO.en.name,
-			lastName: PERSONAL_INFO.en.lastName,
+			name: PERSONAL_INFO.name,
+			lastName: PERSONAL_INFO.lastName,
 			year: new Date().getFullYear(),
-			profession: PERSONAL_INFO.en.profession,
+			profession: PERSONAL_INFO.profession.en,
 			legend: 'Built with React, TailwindCSS and with ❤️',
-			github: PERSONAL_INFO.en.github,
-			email: PERSONAL_INFO.en.email,
+			github: PERSONAL_INFO.github,
+			email: PERSONAL_INFO.email,
 		},
 	},
 	es: {
 		navbar: NAVBAR_ITEMS.es,
-		hero: PERSONAL_INFO.es,
+		hero: {
+			profession: PERSONAL_INFO.profession.es,
+			description: PERSONAL_INFO.description.es,
+			alt: PERSONAL_INFO.image.alt.es,
+			cv: {
+				name: PERSONAL_INFO.cv.name.es,
+			},
+		},
 		experience: {
 			title: 'Experiencia',
 			jobs: EXPERIENCE_ITEMS.es,
@@ -62,13 +76,13 @@ export const translations = {
 			info: CONTACT_ME.es,
 		},
 		footer: {
-			name: PERSONAL_INFO.es.name,
-			lastName: PERSONAL_INFO.es.lastName,
+			name: PERSONAL_INFO.name,
+			lastName: PERSONAL_INFO.lastName,
 			year: new Date().getFullYear(),
-			profession: PERSONAL_INFO.es.profession,
+			profession: PERSONAL_INFO.profession.es,
 			legend: 'Hecho con React, TailwindCSS y con ❤️',
-			github: PERSONAL_INFO.es.github,
-			email: PERSONAL_INFO.es.email,
+			github: PERSONAL_INFO.github,
+			email: PERSONAL_INFO.email,
 		},
 	},
 }
