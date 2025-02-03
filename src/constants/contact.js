@@ -3,9 +3,6 @@ export const CONTACT_ME = {
 		header: "Let's talk!",
 		description:
 			"I am available for work in projects of development web. If you have any question or collaboration, don't hesitate to contact me.",
-		email: 'paolo.herrera.araya@gmail.com',
-		city: 'Santiago',
-		country: 'Chile',
 		labels: {
 			name: 'Name',
 			email: 'Email',
@@ -29,9 +26,6 @@ export const CONTACT_ME = {
 		header: '¡Hablemos!',
 		description:
 			'Estoy disponible para trabajar en proyectos de desarrollo web. Si tienes alguna pregunta o colaboración, no dudes en contactarme.',
-		email: 'paolo.herrera.araya@gmail.com',
-		city: 'Santiago',
-		country: 'Chile',
 		labels: {
 			name: 'Nombre',
 			email: 'Email',
