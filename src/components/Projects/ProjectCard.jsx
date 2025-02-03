@@ -1,13 +1,11 @@
+import { motion } from 'motion/react'
+
+import { Chip } from '@/components/Shared/Chip/Chip.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
 import { LinkIcon } from '@/components/Shared/Icons/Icons.jsx'
 import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
-import { Chip } from '@/components/Shared/Chip/Chip.jsx'
-
-import { motion } from 'motion/react'
 
 export const ProjectCard = ({ item }) => {
-	const technologies = [...item.technologies]
-
 	return (
 		<motion.article
 			className="flex flex-col gap-4 w-full h-full"
@@ -23,7 +21,7 @@ export const ProjectCard = ({ item }) => {
 							{item.name}
 						</h3>
 						<div className="flex flex-row gap-2 flex-wrap justify-center">
-							{technologies.map((tech) => (
+							{item.technologies.map((tech) => (
 								<Chip key={tech.id} className={tech.bgcolor}>
 									<tech.icon height="1rem" width="1rem" />
 									{tech.name}
