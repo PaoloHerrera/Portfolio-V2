@@ -1,11 +1,18 @@
 import { PageTitle } from '@/pages/PageTitle.jsx'
-import { CONTACTME } from '@/constants.js'
 import { ContactText } from '@/components/Contact/ContactText.jsx'
 import { ContactForm } from '@/components/Contact/ContactForm.jsx'
+import { useTranslation } from '@/hooks/useTranslation.js'
 
-export const Contact = ({ title }) => {
-	const { header, description, email, address } = CONTACTME
-	const { labels, placeholders } = CONTACTME
+export const Contact = () => {
+	const { translate } = useTranslation()
+
+	const title = translate('contact.title')
+
+	const info = translate('contact.info')
+
+	const { header, description, email, city, country } = info
+
+	const { labels, placeholders, messages } = info
 
 	return (
 		<section id="contact" className="mb-10">
@@ -16,10 +23,14 @@ export const Contact = ({ title }) => {
 					header={header}
 					description={description}
 					email={email}
-					address={address}
+					address={{ city, country }}
 				/>
 
-				<ContactForm labels={labels} placeholders={placeholders} />
+				<ContactForm
+					labels={labels}
+					placeholders={placeholders}
+					messages={messages}
+				/>
 			</article>
 		</section>
 	)

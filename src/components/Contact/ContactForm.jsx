@@ -14,23 +14,25 @@ import { sendEmailWhitEmailJs } from '@/services/emailjsProvider.js'
 
 import { validateForm } from './validateForm.js'
 
-export const ContactForm = ({ labels, placeholders }) => {
+export const ContactForm = ({ labels, placeholders, messages }) => {
 	/* Form */
 	const [formError, setFormError] = useState({})
 	const [formReady, setFormReady] = useState(false)
 
-	// console.log(sendEmailWhitEmailJs)
-
 	const form = useRef()
+
+	const { invalidName, invalidEmail, invalidMessage } = messages
 
 	const { sendEmail, successMessage, errorMessage } = useSendMail({
 		setFormReady,
+		successSendMessage: messages.successSend,
+		errorSendMessage: messages.errorSend,
 	})
 
 	const sendForm = (e) => {
 		e.preventDefault()
 
-		const errors = validateForm(form)
+		const errors = validateForm(form, invalidName, invalidEmail, invalidMessage)
 
 		if (Object.keys(errors).length > 0) {
 			setFormError(errors)
@@ -95,7 +97,7 @@ export const ContactForm = ({ labels, placeholders }) => {
 					disabled={!formReady}
 				/>
 				<Button type="submit" variant="secondary" disabled={!formReady}>
-					Enviar
+					{labels.send}
 				</Button>
 			</motion.form>
 			{successMessage && <SuccessMessage successMessage={successMessage} />}
