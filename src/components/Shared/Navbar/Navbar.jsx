@@ -1,5 +1,4 @@
 import styles from './Navbar.module.css'
-import { NAVBAR_BRAND, NAVBAR_ITEMS } from '@/constants.js'
 import { useMenu } from '@/hooks/useMenu.js'
 import { NavbarBrand } from './NavbarBrand.jsx'
 import { NavbarLinks } from './NavbarLinks.jsx'
@@ -11,8 +10,16 @@ import { opacityVariants } from '@/variants.js'
 
 import { motion } from 'motion/react'
 
+import { NAVBAR_BRAND } from '@/constants/navbar.js'
+
+import { useTranslation } from '@/hooks/useTranslation.js'
+
 export const Navbar = () => {
 	const { isMenuOpen, setIsMenuOpen } = useMenu()
+
+	const { translate } = useTranslation()
+
+	const navbarItems = translate('navbar')
 
 	return (
 		<header>
@@ -25,14 +32,14 @@ export const Navbar = () => {
 						initial="initial"
 						animate="animate"
 					>
-						<NavbarLinks items={NAVBAR_ITEMS} />
+						<NavbarLinks items={navbarItems} />
 					</motion.div>
 
 					<ToggleButton setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
 						<ToggleIcon isOpen={isMenuOpen} />
 					</ToggleButton>
 					<Sidebar isMenuOpen={isMenuOpen}>
-						<NavbarLinks items={NAVBAR_ITEMS} />
+						<NavbarLinks items={navbarItems} />
 					</Sidebar>
 				</div>
 			</nav>
