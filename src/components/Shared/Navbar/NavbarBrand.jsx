@@ -5,8 +5,7 @@ export const NavbarBrand = ({ item }) => {
 	return (
 		<motion.div variants={variants} initial="initial" animate="animate">
 			<a href={item.link}>
-				<span className="font-bold text-2xl">{item.name}</span>
-				<span className="text-secondary font-bold text-2xl">{item.last}</span>
+				<span className="font-bold text-2xl text-secondary">{item.name}</span>
 			</a>
 		</motion.div>
 	)

@@ -23,7 +23,9 @@ export const Navbar = () => {
 
 	return (
 		<header>
-			<nav className={styles.navbar}>
+			<nav
+				className={`${styles.navbar} light:bg-nav-input-light dark:bg-nav-input-dark`}
+			>
 				<div className={styles.navListContainer}>
 					<NavbarBrand item={NAVBAR_BRAND} />
 					<motion.div
