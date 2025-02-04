@@ -14,6 +14,7 @@ export const HeroImage = ({ image }) => {
 				src={image.url}
 				alt={image.alt}
 				className={`${styles.heroImage} sm:w-full w-auto sm:h-auto`}
+				loading="lazy"
 			/>
 			<div className={styles.verticalColor} />
 		</motion.article>
