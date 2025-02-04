@@ -54,7 +54,7 @@ export const LightIcon = () => (
 		stroke="currentColor"
 		strokeWidth={2}
 	>
-		<title>Modo Claro</title>
+		<title>Light</title>
 		<path
 			strokeLinecap="round"
 			strokeLinejoin="round"
@@ -72,7 +72,7 @@ export const DarkIcon = () => (
 		stroke="currentColor"
 		strokeWidth={2}
 	>
-		<title>Modo Oscuro</title>
+		<title>Dark</title>
 		<path
 			strokeLinecap="round"
 			strokeLinejoin="round"
