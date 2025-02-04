@@ -14,12 +14,26 @@ import { NAVBAR_BRAND } from '@/constants/navbar.js'
 
 import { useTranslation } from '@/hooks/useTranslation.js'
 
+import { LightIcon, DarkIcon } from '../Icons/Icons.jsx'
+
+import { useTheme } from '@/hooks/useTheme.js'
+
 export const Navbar = () => {
 	const { isMenuOpen, setIsMenuOpen } = useMenu()
 
 	const { translate } = useTranslation()
 
 	const navbarItems = translate('navbar')
+
+	const { theme, setTheme } = useTheme()
+
+	const handleClick = () => {
+		if (theme === 'light') {
+			setTheme('dark')
+		} else {
+			setTheme('light')
+		}
+	}
 
 	return (
 		<header>
@@ -29,12 +43,32 @@ export const Navbar = () => {
 				<div className={styles.navListContainer}>
 					<NavbarBrand item={NAVBAR_BRAND} />
 					<motion.div
-						className="hidden lg:flex"
+						className="hidden lg:flex gap-10 justify-center items-center"
 						variants={opacityVariants}
 						initial="initial"
 						animate="animate"
 					>
 						<NavbarLinks items={navbarItems} />
+
+						{theme === 'light' && (
+							<button
+								type="button"
+								className="cursor-pointer"
+								onClick={handleClick}
+							>
+								<DarkIcon />
+							</button>
+						)}
+
+						{theme === 'dark' && (
+							<button
+								type="button"
+								className="cursor-pointer"
+								onClick={handleClick}
+							>
+								<LightIcon />
+							</button>
+						)}
 					</motion.div>
 
 					<ToggleButton setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
