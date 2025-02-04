@@ -8,10 +8,14 @@ export const Input = ({ params, disabled = false }) => {
 				id={name}
 				name={name}
 				placeholder={placeholder}
-				className={`w-full h-12 border rounded-md px-4 bg-black text-white ${error ? 'border-error' : 'border-white'}`}
+				className={`w-full h-12 border rounded-md px-4 light:bg-nav-input-light dark:bg-nav-input-dark light:text-text-light dark:text-text-dark ${error ? 'light:border-error-light dark:border-error-dark' : 'light:border-black dark:border-white'}`}
 				disabled={disabled}
 			/>
-			{error && <span className="text-error text-sm">{error}</span>}
+			{error && (
+				<span className="light:text-error-light dark:text-error-dark text-sm">
+					{error}
+				</span>
+			)}
 		</div>
 	)
 }
@@ -27,10 +31,14 @@ export const TextArea = ({ params, disabled = false }) => {
 				cols="30"
 				rows="10"
 				placeholder={placeholder}
-				className={`w-full border rounded-md p-4 bg-black text-white resize-none ${error ? 'border-error' : 'border-white'}`}
+				className={`w-full border rounded-md p-4 light:bg-nav-input-light dark:bg-nav-input-dark light:text-text-light dark:text-text-dark resize-none ${error ? 'light:border-error-light dark:border-error-dark' : 'light:border-black dark:border-white'}`}
 				disabled={disabled}
 			/>
-			{error && <span className="text-error text-sm">{error}</span>}
+			{error && (
+				<span className="light:text-error-light dark:text-error-dark text-sm">
+					{error}
+				</span>
+			)}
 		</div>
 	)
 }
