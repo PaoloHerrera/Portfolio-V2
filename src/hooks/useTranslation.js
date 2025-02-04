@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import { LangContext } from '@/context/LangContext.js'
+import { AppContext } from '@/context/AppContext.js'
 import { translations } from '@/i18n/translations.js'
 
 export const useTranslation = () => {
-	const { language } = useContext(LangContext)
+	const { language } = useContext(AppContext)
 
 	// Función para traducir el texto. Recibe el key de la traducción en el objeto de traducciones y devuelve el texto traducido
 	const translate = (key) => {

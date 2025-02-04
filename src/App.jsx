@@ -8,12 +8,12 @@ import { About } from './pages/AboutPage/About.jsx'
 import { Contact } from './pages/ContactPage/Contact.jsx'
 import { Footer } from './components/Shared/Footer/Footer.jsx'
 
-import { LangProvider } from './context/langProvider.jsx'
+import { AppProvider } from './context/AppProvider.jsx'
 
 export const App = () => {
 	return (
 		<div className="relative h-full light:bg-bg-light bg-bg-dark light:text-text-light text-text-dark">
-			<LangProvider>
+			<AppProvider>
 				<Navbar />
 				<main className="flex flex-col justify-center items-center w-full">
 					<Hero />
@@ -24,7 +24,7 @@ export const App = () => {
 					<Contact />
 				</main>
 				<Footer />
-			</LangProvider>
+			</AppProvider>
 		</div>
 	)
 }
