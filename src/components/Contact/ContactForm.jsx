@@ -1,7 +1,6 @@
 import { Button } from '@/components/Shared/Button/Button.jsx'
 import { Input } from '@/components/Shared/Input/Input.jsx'
 import { TextArea } from '@/components/Shared/Input/Input.jsx'
-import { ContactIcon } from '@/components/Shared/Icons/Animate/ContactIcon.jsx'
 import { ErrorMessage } from '@/components/Shared/FormMessages/ErrorMessage.jsx'
 import { SuccessMessage } from '@/components/Shared/FormMessages/SuccessMessage.jsx'
 
@@ -53,7 +52,6 @@ export const ContactForm = ({ labels, placeholders, messages }) => {
 
 	return (
 		<div className="md:w-1/2 w-full relative">
-			<ContactIcon />
 			<motion.form
 				ref={form}
 				onSubmit={sendForm}

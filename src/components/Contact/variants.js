@@ -13,6 +13,6 @@ export const formVariants = {
 	animate: {
 		opacity: 1,
 		scale: 1,
-		transition: { delay: 2, duration: 1 },
+		transition: { delay: 0, duration: 1, ease: 'easeInOut' },
 	},
 }
