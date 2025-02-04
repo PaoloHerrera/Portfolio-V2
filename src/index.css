@@ -1,12 +1,28 @@
 @import "tailwindcss";
 
+@custom-variant light (&:where([data-theme="light"], [data-theme="light"] *));
+
 @theme {
-  --color-primary: #111;
-  --color-black: #222;
-  --color-secondary: #2191fb;
+  --color-bg-light: #f5f5f5;  /* Fondo */
+  --color-bg-dark: #111;  /* Fondo */
+
+  --color-nav-input-light: #fff; /* Navbar e Inputs */
+  --color-nav-input-dark: #222; /* Navbar e Inputs */
+
+  --color-secondary: #2191fb; /* Texto destacado, botones, links, iconos y linea de tiempo */
+
+  --color-text-light: #222; /* Texto principal */
+  --color-text-dark: #ebecf3; /* Texto principal */
+
+  --color-success-light: #00c853; /* Mensaje de éxito */
+  --color-success-dark: #00ff00; /* Mensaje de éxito */
+
+  --color-error-light: #d32f2f; /* Mensaje de error */
+  --color-error-dark: #ff001f; /* Mensaje de error */
+
   --color-white: #ebecf3;
-  --color-success: #00ff00;
-  --color-error: #ff001f;
+  --color-black: #111;
+
 }
 
 ::-webkit-scrollbar {
