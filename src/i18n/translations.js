@@ -3,6 +3,7 @@ import { EXPERIENCE_ITEMS } from '../constants/experience.js'
 import { NAVBAR_ITEMS } from '../constants/navbar.js'
 import { PROJECTS_ITEMS } from '../constants/projects.js'
 import { CONTACT_ME } from '../constants/contact.js'
+import { ABOUT_ME } from '../constants/about.js'
 
 export const translations = {
 	en: {
@@ -30,6 +31,7 @@ export const translations = {
 		},
 		about: {
 			title: 'About Me',
+			alt: ABOUT_ME.alt.en,
 		},
 		contact: {
 			title: 'Contact',
@@ -37,7 +39,7 @@ export const translations = {
 		},
 		footer: {
 			profession: PERSONAL_INFO.profession.en,
-			legend: 'Built with React, TailwindCSS and with ❤️',
+			legend: 'Built with React, TailwindCSS, Motion and with ❤️',
 		},
 	},
 	es: {
@@ -64,7 +66,8 @@ export const translations = {
 			learning: 'Aprendiendo',
 		},
 		about: {
-			title: 'Sobre mi',
+			title: 'Sobre mí',
+			alt: ABOUT_ME.alt.es,
 		},
 		contact: {
 			title: 'Contacto',
@@ -72,7 +75,7 @@ export const translations = {
 		},
 		footer: {
 			profession: PERSONAL_INFO.profession.es,
-			legend: 'Hecho con React, TailwindCSS y con ❤️',
+			legend: 'Hecho con React, TailwindCSS, Motion y con ❤️',
 		},
 	},
 }
