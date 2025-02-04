@@ -1,7 +1,7 @@
 export const AboutEs = () => {
 	return (
 		<>
-			<p className="md:text-lg">
+			<p className="md:text-xl">
 				Soy{' '}
 				<span className="font-bold text-secondary">
 					Ingeniero Civil en Informática{' '}
@@ -14,7 +14,7 @@ export const AboutEs = () => {
 				</span>
 			</p>
 
-			<p className="opacity-90 md:text-lg">
+			<p className="opacity-90 md:text-xl">
 				Entre mis logros está desarrollar un{' '}
 				<span className="text-secondary">
 					sistema de refinanciamiento/renegociación utilizado por miles de

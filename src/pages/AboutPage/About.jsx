@@ -12,7 +12,7 @@ export const About = () => {
 	const title = translate('about.title')
 
 	return (
-		<section id="about">
+		<section id="about" style={{ minHeight: '100%' }}>
 			<PageTitle title={title} />
 
 			<div className="flex flex-col-reverse md:flex-row items-center gap-14 mt-20 justify-between">
