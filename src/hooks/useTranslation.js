@@ -3,7 +3,12 @@ import { AppContext } from '@/context/AppContext.js'
 import { translations } from '@/i18n/translations.js'
 
 export const useTranslation = () => {
-	const { language } = useContext(AppContext)
+	const context = useContext(AppContext)
+
+	if (!context) {
+		throw new Error('useTranslation must be used within AppProvider')
+	}
+	const { language } = context
 
 	// Función para traducir el texto. Recibe el key de la traducción en el objeto de traducciones y devuelve el texto traducido
 	const translate = (key) => {

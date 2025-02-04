@@ -1,21 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
+import { AppContext } from '../context/AppContext.js'
 
 export const useMenu = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const context = useContext(AppContext)
+
+	if (!context) {
+		throw new Error('useMenu must be used within AppProvider')
+	}
+
+	const { menu, setMenu } = context
 
 	// Deshabilita el scroll cuando el menu esta abierto
 	useEffect(() => {
-		if (isMenuOpen) {
+		if (menu) {
 			document.body.style.overflow = 'hidden'
 		} else {
 			document.body.style.overflow = 'auto'
 		}
-	}, [isMenuOpen])
+	}, [menu])
 
 	// Cerrar el menu al redimensionar la ventana
 	useEffect(() => {
 		const handleResize = () => {
-			setIsMenuOpen(false)
+			setMenu(false)
 		}
 		window.addEventListener('resize', handleResize)
 		return () => {
@@ -23,16 +30,5 @@ export const useMenu = () => {
 		}
 	})
 
-	// Cerrar el menu al navegar a otra pagina
-	useEffect(() => {
-		const changeUrl = () => {
-			setIsMenuOpen(false)
-		}
-		window.addEventListener('popstate', changeUrl)
-		return () => {
-			window.removeEventListener('popstate', changeUrl)
-		}
-	})
-
-	return { isMenuOpen, setIsMenuOpen }
+	return { menu, setMenu }
 }

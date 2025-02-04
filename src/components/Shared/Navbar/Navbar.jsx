@@ -19,7 +19,7 @@ import { LightIcon, DarkIcon } from '../Icons/Icons.jsx'
 import { useTheme } from '@/hooks/useTheme.js'
 
 export const Navbar = () => {
-	const { isMenuOpen, setIsMenuOpen } = useMenu()
+	const { menu, setMenu } = useMenu()
 
 	const { translate } = useTranslation()
 
@@ -71,12 +71,12 @@ export const Navbar = () => {
 								<LightIcon />
 							</button>
 						)}
-						<ToggleButton setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
-							<ToggleIcon isOpen={isMenuOpen} />
+						<ToggleButton setIsMenuOpen={() => setMenu(!menu)}>
+							<ToggleIcon isOpen={menu} />
 						</ToggleButton>
 					</motion.div>
 
-					<Sidebar isMenuOpen={isMenuOpen}>
+					<Sidebar isMenuOpen={menu}>
 						<NavbarLinks items={navbarItems} />
 					</Sidebar>
 				</div>

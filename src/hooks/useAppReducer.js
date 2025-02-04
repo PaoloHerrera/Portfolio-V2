@@ -18,5 +18,14 @@ export const useAppReducer = () => {
 	const setLanguage = (language) =>
 		dispatch({ type: 'SET_LANGUAGE', payload: language })
 
-	return { language: state.lang, theme: state.theme, setTheme, setLanguage }
+	const setMenu = (menu) => dispatch({ type: 'SET_MENU', payload: menu })
+
+	return {
+		language: state.lang,
+		theme: state.theme,
+		menu: state.menu,
+		setTheme,
+		setLanguage,
+		setMenu,
+	}
 }
