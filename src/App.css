@@ -15,7 +15,7 @@ section {
   min-height: 100vh;
   max-width: 1200px;
   scroll-snap-stop: always;
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 section#home {
@@ -33,4 +33,8 @@ nav {
 
 main {
   padding: 0 24px;
+}
+
+footer {
+  padding: 0 24px 24px 24px;
 }
