@@ -33,7 +33,7 @@ export const CONTACT_ME = {
 			send: 'Enviar',
 		},
 		placeholders: {
-			name: 'Juan Perez',
+			name: 'Juan Pérez',
 			email: 'juanperez@example.com',
 			message: 'Tu mensaje',
 		},
