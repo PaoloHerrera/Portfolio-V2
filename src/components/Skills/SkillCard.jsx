@@ -1,5 +1,6 @@
 import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.jsx'
 import { motion } from 'motion/react'
+import { useTheme } from '@/hooks/useTheme.js'
 
 const SkillContent = ({ skills }) => {
 	return (
@@ -15,8 +16,7 @@ const SkillContent = ({ skills }) => {
 }
 
 export const SkillCard = ({ name, skills }) => {
-	//Recupera el color de la interfaz
-	const color = document.documentElement.dataset.theme
+	const { theme } = useTheme()
 
 	return (
 		<motion.article
@@ -29,7 +29,7 @@ export const SkillCard = ({ name, skills }) => {
 			<SpotlightCard
 				className="h-full light:bg-bg-light dark:bg-bg-dark"
 				spotlightColor={
-					color === 'light'
+					theme === 'light'
 						? 'rgba(0, 0, 0, 0.25)'
 						: 'rgba(255, 255, 255, 0.25)'
 				}

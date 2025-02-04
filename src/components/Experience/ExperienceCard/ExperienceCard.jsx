@@ -5,10 +5,10 @@ import { Title } from '@/components/Shared/Title/Title.jsx'
 import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.jsx'
 
 import { motion } from 'motion/react'
+import { useTheme } from '@/hooks/useTheme.js'
 
 export const ExperienceCard = ({ item, position }) => {
-	//Recupera el color de la interfaz
-	const color = document.documentElement.dataset.theme
+	const { theme } = useTheme()
 
 	return (
 		<article
@@ -24,7 +24,7 @@ export const ExperienceCard = ({ item, position }) => {
 				<SpotlightCard
 					className="min-h-[320px] p-8 flex flex-col gap-5 light:bg-bg-light dark:bg-bg-dark"
 					spotlightColor={
-						color === 'light'
+						theme === 'light'
 							? 'rgba(0, 0, 0, 0.25)'
 							: 'rgba(255, 255, 255, 0.25)'
 					}
