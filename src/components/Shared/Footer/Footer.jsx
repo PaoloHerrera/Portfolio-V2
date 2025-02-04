@@ -17,7 +17,7 @@ export const Footer = () => {
 	const legend = translate('footer.legend')
 
 	return (
-		<footer className="opacity-90 mt-16 w-full mx-auto pb-10">
+		<footer className="opacity-90 mt-16 w-full mx-auto">
 			<div className="container mx-auto flex flex-col md:flex-row justify-between items-center max-w-[1200px]">
 				<div className="text-center md:text-left mb-4 md:mb-0">
 					<p className="text-sm font-bold">
