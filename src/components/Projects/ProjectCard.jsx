@@ -37,11 +37,11 @@ export const ProjectCard = ({ item }) => {
 					<footer className="flex flex-wrap gap-5 justify-center">
 						<ButtonLink href={item.github} variant="primary">
 							<Github height="1.5rem" width="1.5rem" />
-							<span className="hidden sm:inline">Code</span>
+							<span className="hidden sm:inline">GitHub</span>
 						</ButtonLink>
 						<ButtonLink href={item.link} variant="primary">
 							<LinkIcon height="1.5rem" width="1.5rem" />
-							<span className="hidden sm:inline">Preview </span>
+							<span className="hidden sm:inline">Link</span>
 						</ButtonLink>
 					</footer>
 				</div>
@@ -51,6 +51,7 @@ export const ProjectCard = ({ item }) => {
 						src={item.image}
 						alt={item.alt}
 						className="w-full object-cover h-full rounded-lg"
+						loading="lazy"
 					/>
 				</div>
 			</div>
