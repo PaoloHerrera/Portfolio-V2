@@ -43,12 +43,14 @@ export const Navbar = () => {
 				<div className={styles.navListContainer}>
 					<NavbarBrand item={NAVBAR_BRAND} />
 					<motion.div
-						className="hidden lg:flex gap-10 justify-center items-center"
+						className="gap-10 justify-center items-center flex"
 						variants={opacityVariants}
 						initial="initial"
 						animate="animate"
 					>
-						<NavbarLinks items={navbarItems} />
+						<div className="hidden lg:flex">
+							<NavbarLinks items={navbarItems} />
+						</div>
 
 						{theme === 'light' && (
 							<button
@@ -69,11 +71,11 @@ export const Navbar = () => {
 								<LightIcon />
 							</button>
 						)}
+						<ToggleButton setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
+							<ToggleIcon isOpen={isMenuOpen} />
+						</ToggleButton>
 					</motion.div>
 
-					<ToggleButton setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
-						<ToggleIcon isOpen={isMenuOpen} />
-					</ToggleButton>
 					<Sidebar isMenuOpen={isMenuOpen}>
 						<NavbarLinks items={navbarItems} />
 					</Sidebar>
