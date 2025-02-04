@@ -15,6 +15,9 @@ const SkillContent = ({ skills }) => {
 }
 
 export const SkillCard = ({ name, skills }) => {
+	//Recupera el color de la interfaz
+	const color = document.documentElement.dataset.theme
+
 	return (
 		<motion.article
 			className="w-full"
@@ -23,7 +26,14 @@ export const SkillCard = ({ name, skills }) => {
 			transition={{ duration: 0.5, ease: 'easeInOut' }}
 			viewport={{ once: false, margin: '0px 0px -110px 0px' }}
 		>
-			<SpotlightCard className="h-full">
+			<SpotlightCard
+				className="h-full light:bg-bg-light dark:bg-bg-dark"
+				spotlightColor={
+					color === 'light'
+						? 'rgba(0, 0, 0, 0.25)'
+						: 'rgba(255, 255, 255, 0.25)'
+				}
+			>
 				<div className="flex flex-col gap-14 items-center justify-center h-full">
 					<h3 className="font-bold lg:text-4xl text-2xl">{name}</h3>
 					<SkillContent skills={skills} />
