@@ -21,5 +21,5 @@ export const useTranslation = () => {
 		return value || translations.en[key]
 	}
 
-	return { translate }
+	return { translate, language }
 }
