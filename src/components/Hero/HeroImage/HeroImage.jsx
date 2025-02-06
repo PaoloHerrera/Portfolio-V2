@@ -10,15 +10,15 @@ export const HeroImage = ({ image }) => {
 			initial="initial"
 			animate="animate"
 		>
-			<div className="aspect-3/4 relative w-full">
+			<div className="aspect-3/4 flex justify-center">
 				<img
 					src={image.url}
 					alt={image.alt}
-					className={`${styles.heroImage} object-cover rounded-lg absolute z-10`}
+					className={`${styles.heroImage} w-60 sm:w-72 object-cover aspect-square rounded-lg md:w-full z-10`}
 					loading="lazy"
 				/>
+				<div className="w-1/2 absolute h-full top-0 bg-secondary" />
 			</div>
-			<div className={styles.verticalColor} />
 		</motion.article>
 	)
 }
