@@ -1,9 +1,7 @@
 import styles from './ExperienceCard.module.css'
 import { List } from '@/components/Shared/List/List.jsx'
 import { CalendarIcon } from '@/components/Shared/Icons/Icons.jsx'
-import { Title } from '@/components/Shared/Title/Title.jsx'
 import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.jsx'
-
 import { motion } from 'motion/react'
 import { useTheme } from '@/hooks/useTheme.js'
 
@@ -30,13 +28,13 @@ export const ExperienceCard = ({ item, position }) => {
 					}
 				>
 					<div className="flex flex-col md:flex-row md:justify-between gap-4">
-						<Title>{item.company}</Title>
-						<span className="font-bold flex items-center">{item.date}</span>
+						<h3 className="font-black text-xl">{item.company}</h3>
+						<span className="font-light flex items-center">{item.date}</span>
 					</div>
 
 					<div className="flex flex-col md:flex-row md:justify-between mb-5 gap-3">
-						<Title variant="secondary">{item.role}</Title>
-						<span className="font-bold flex items-center">
+						<h4 className="font-bold text-lg text-secondary">{item.role}</h4>
+						<span className="font-light flex items-center">
 							{item.city}, {item.country}
 						</span>
 					</div>
