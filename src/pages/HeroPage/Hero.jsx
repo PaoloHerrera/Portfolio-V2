@@ -27,7 +27,7 @@ export const Hero = () => {
 	return (
 		<section
 			id="home"
-			className={`${styles.heroSection} md:flex-row flex-col-reverse justify-center md:justify-between`}
+			className={`${styles.heroSection} sm:flex-row flex-col-reverse justify-center sm:justify-between gap-10`}
 		>
 			<HeroInfo info={heroData} />
 			<HeroImage image={heroData.image} />

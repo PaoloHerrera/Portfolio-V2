@@ -5,19 +5,19 @@ import { opacityVariants as variants } from '@/variants.js'
 export const HeroImage = ({ image }) => {
 	return (
 		<motion.article
-			className="flex items-center justify-center max-w-[300px] md:max-w-[400px] w-full h-full relative"
+			className="h-1/2 sm:h-full sm:w-1/2 max-w-[500px] relative"
 			variants={variants}
 			initial="initial"
 			animate="animate"
 		>
-			<div className="aspect-3/4 flex justify-center max-h-full relative">
+			<div className="h-full aspect-3/4 w-full flex justify-center items-center">
 				<img
 					src={image.url}
 					alt={image.alt}
-					className={`${styles.heroImage} object-cover rounded-lg z-10`}
+					className={`${styles.heroImage} object-cover max-h-full w-full z-10`}
 					loading="lazy"
 				/>
-				<div className="absolute bg-secondary bottom-0 h-screen w-1/2" />
+				<div className="absolute bg-secondary bottom-0 h-full w-1/2" />
 			</div>
 		</motion.article>
 	)
