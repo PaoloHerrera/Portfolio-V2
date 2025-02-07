@@ -72,7 +72,7 @@ export const MONGODB = {
 }
 
 export const HTML5 = {
-	name: 'HTML5',
+	name: 'HTML',
 	icon: Html5Icon,
 	bgcolor: '',
 }
@@ -158,7 +158,7 @@ export const FRONTEND = {
 		{ id: 4, ...TAILWINDCSS },
 		{ id: 5, ...VUE },
 		{ id: 6, ...REACT },
-		{ id: 7, ...TAILWINDCSS },
+		{ id: 7, ...TYPESCRIPT },
 	],
 }
 
