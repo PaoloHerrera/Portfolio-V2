@@ -1,9 +1,0 @@
-.heroImage {
-	mask-image: linear-gradient(var(--color-black) 99%, transparent);
-}
-
-.verticalColor {
-	@apply w-1/2 h-full;
-	position: absolute;
-	background-color: var(--color-secondary);
-}

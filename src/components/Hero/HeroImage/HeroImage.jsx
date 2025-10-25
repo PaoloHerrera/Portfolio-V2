@@ -1,6 +1,5 @@
 import { opacityVariants as variants } from '@/variants.js'
 import { motion } from 'motion/react'
-import styles from './HeroImage.module.css'
 
 export const HeroImage = ({ image }) => {
 	return (
@@ -14,7 +13,10 @@ export const HeroImage = ({ image }) => {
 				<img
 					src={image.url}
 					alt={image.alt}
-					className={`${styles.heroImage} object-cover max-h-full w-full z-10`}
+					className="object-cover max-h-full w-full z-10"
+					style={{
+						maskImage: 'linear-gradient(var(--color-black) 99%, transparent)',
+					}}
 					loading="lazy"
 				/>
 				<div className="absolute bg-secondary bottom-0 h-full w-1/2" />
