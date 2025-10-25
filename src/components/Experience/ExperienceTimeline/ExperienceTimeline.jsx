@@ -1,8 +1,8 @@
 import { ExperienceCard } from '../ExperienceCard/ExperienceCard.jsx'
 import { TimelineLine } from './TimelineLine.jsx'
 
-import { useRef } from 'react'
 import { useScroll } from 'motion/react'
+import { useRef } from 'react'
 
 import styles from './ExperienceTimeline.module.css'
 

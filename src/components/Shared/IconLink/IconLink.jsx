@@ -5,7 +5,7 @@ export const IconLink = ({ href, children, target = '_blank' }) => {
 		<a
 			href={href}
 			target={target}
-			rel="noreferrer"
+			rel={target === '_blank' ? 'noopener noreferrer' : undefined}
 			className={`${styles.iconLink} p-2`}
 		>
 			{children}

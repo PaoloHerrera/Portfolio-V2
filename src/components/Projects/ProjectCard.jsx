@@ -1,9 +1,9 @@
 import { motion } from 'motion/react'
 
+import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
 import { Chip } from '@/components/Shared/Chip/Chip.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
-import { LinkIcon } from '@/components/Shared/Icons/Icons.jsx'
-import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
+import { LinkIcon } from '@/components/Shared/Icons/icons.jsx'
 
 export const ProjectCard = ({ item }) => {
 	return (

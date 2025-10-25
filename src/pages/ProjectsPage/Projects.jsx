@@ -1,6 +1,6 @@
-import { PageTitle } from '@/pages/PageTitle.jsx'
 import { ProjectCard } from '@/components/Projects/ProjectCard.jsx'
 import { useTranslation } from '@/hooks/useTranslation.js'
+import { PageTitle } from '@/pages/PageTitle.jsx'
 
 export const Projects = () => {
 	const { translate } = useTranslation()

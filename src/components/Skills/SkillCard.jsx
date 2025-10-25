@@ -1,6 +1,6 @@
 import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.jsx'
-import { motion } from 'motion/react'
 import { useTheme } from '@/hooks/useTheme.js'
+import { motion } from 'motion/react'
 
 const SkillContent = ({ skills }) => {
 	return (

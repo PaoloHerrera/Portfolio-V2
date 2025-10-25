@@ -10,7 +10,7 @@ export const ButtonLink = ({
 			href={href}
 			download={isDownload}
 			target={isDownload ? undefined : '_blank'}
-			rel={isDownload ? undefined : 'noreferrer'}
+			rel={isDownload ? undefined : 'noopener noreferrer'}
 			className={`${styles.button} ${styles[variant]} ml-2 flex gap-2 items-center`}
 		>
 			{children}

@@ -1,7 +1,7 @@
-import { PageTitle } from '@/pages/PageTitle.jsx'
-import { ContactText } from '@/components/Contact/ContactText.jsx'
 import { ContactForm } from '@/components/Contact/ContactForm.jsx'
+import { ContactText } from '@/components/Contact/ContactText.jsx'
 import { useTranslation } from '@/hooks/useTranslation.js'
+import { PageTitle } from '@/pages/PageTitle.jsx'
 
 import { PERSONAL_INFO } from '@/constants/personalInfo.js'
 
@@ -16,7 +16,7 @@ export const Contact = () => {
 
 	return (
 		<section id="contact" className="mb-10">
-			<PageTitle title={title} />
+			<PageTitle id="contact-title" title={title} />
 
 			<article className="flex flex-col items-center md:flex-row gap-14 mt-20 justify-between">
 				<ContactText

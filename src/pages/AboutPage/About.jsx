@@ -1,8 +1,8 @@
-import { PageTitle } from '@/pages/PageTitle.jsx'
-import { AboutEs } from './AboutEs.jsx'
-import { AboutEn } from './AboutEn.jsx'
 import { ABOUT_ME } from '@/constants/about.js'
+import { PageTitle } from '@/pages/PageTitle.jsx'
 import { motion } from 'motion/react'
+import { AboutEn } from './AboutEn.jsx'
+import { AboutEs } from './AboutEs.jsx'
 
 import { useTranslation } from '@/hooks/useTranslation.js'
 
@@ -22,8 +22,7 @@ export const About = () => {
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.5, ease: 'easeInOut' }}
 				>
-					{language === 'es' ? <AboutEs /> : <></>}
-					{language === 'en' ? <AboutEn /> : <></>}
+					{language === 'es' ? <AboutEs /> : <AboutEn />}
 				</motion.article>
 				<motion.div
 					className="aspect-2/3 flex justify-center"

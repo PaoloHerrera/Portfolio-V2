@@ -1,5 +1,5 @@
-import styles from './ExperienceTimeline.module.css'
 import { motion } from 'motion/react'
+import styles from './ExperienceTimeline.module.css'
 
 export const TimelineLine = ({ scrollYProgress }) => {
 	return (
