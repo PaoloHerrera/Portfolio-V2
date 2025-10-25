@@ -1,6 +1,5 @@
 import { ToggleButton } from '@/components/Shared/Button/ToggleButton.jsx'
 import { useMenu } from '@/hooks/useMenu.js'
-import styles from './Navbar.module.css'
 import { NavbarBrand } from './NavbarBrand.jsx'
 import { NavbarLinks } from './NavbarLinks.jsx'
 
@@ -37,10 +36,8 @@ export const Navbar = () => {
 
 	return (
 		<header>
-			<nav
-				className={`${styles.navbar} light:bg-nav-input-light dark:bg-nav-input-dark`}
-			>
-				<div className={styles.navListContainer}>
+			<nav className="flex justify-center items-center light:bg-nav-input-light bg-nav-input-dark">
+				<div className="flex justify-between items-center w-full max-w-[1200px]">
 					<NavbarBrand item={NAVBAR_BRAND} />
 					<motion.div
 						className="gap-10 justify-center items-center flex"

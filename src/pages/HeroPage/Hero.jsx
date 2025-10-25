@@ -2,7 +2,6 @@ import { HeroImage } from '@/components/Hero/HeroImage/HeroImage.jsx'
 import { HeroInfo } from '@/components/Hero/HeroInfo/HeroInfo.jsx'
 import { PERSONAL_INFO } from '@/constants/personalInfo.js'
 import { useTranslation } from '@/hooks/useTranslation.js'
-import styles from './Hero.module.css'
 
 export const Hero = () => {
 	const { translate } = useTranslation()
@@ -27,7 +26,9 @@ export const Hero = () => {
 	return (
 		<section
 			id="home"
-			className={`${styles.heroSection} sm:flex-row flex-col-reverse justify-center sm:justify-between gap-10`}
+			className={
+				'flex items-center h-[calc(100vh-80px)] gap-10 sm:flex-row flex-col-reverse justify-center sm:justify-between'
+			}
 		>
 			<HeroInfo info={heroData} />
 			<HeroImage image={heroData.image} />

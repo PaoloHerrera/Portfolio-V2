@@ -1,10 +1,9 @@
 import { motion } from 'motion/react'
-import styles from './ExperienceTimeline.module.css'
 
 export const TimelineLine = ({ scrollYProgress }) => {
 	return (
 		<motion.div
-			className={styles.timelineLine}
+			className="fixed left-[20px] lg:left-1/2 top-0 w-[2px] h-full opacity-80 -z-10 bg-secondary"
 			initial={{ scaleY: 0 }}
 			style={{
 				scaleY: scrollYProgress,

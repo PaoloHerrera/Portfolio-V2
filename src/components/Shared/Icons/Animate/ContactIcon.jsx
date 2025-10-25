@@ -1,11 +1,10 @@
 import { motion } from 'motion/react'
-import styles from './ContactIcon.module.css'
 import { pathVariants, variants } from './variants.js'
 
 export const ContactIcon = () => {
 	return (
 		<motion.div
-			className={styles.contactIcon}
+			className="absolute m-auto h-full w-full -z-10"
 			variants={variants}
 			initial="initial"
 			whileInView="animate"
@@ -17,6 +16,7 @@ export const ContactIcon = () => {
 				viewBox="0 0 64 64"
 				version="1.1"
 				xmlns="http://www.w3.org/2000/svg"
+				className="stroke-[var(--color-secondary)]"
 			>
 				<title>Contacto</title>
 				<motion.path

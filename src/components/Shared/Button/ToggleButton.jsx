@@ -1,11 +1,9 @@
-import styles from './ToggleButton.module.css'
-
 export const ToggleButton = ({ setIsMenuOpen, children }) => {
 	return (
 		<>
 			<button
 				type="button"
-				className={`${styles.toggleButton} flex lg:hidden`}
+				className={'flex lg:hidden cursor-pointer text-secondary'}
 				onClick={setIsMenuOpen}
 				aria-label="Abrir menu"
 			>

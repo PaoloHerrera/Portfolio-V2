@@ -4,11 +4,10 @@ import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
 import { MailIcon } from '@/components/Shared/Icons/icons.jsx'
 import { leftVariants as variants } from '@/variants.js'
 import { motion } from 'motion/react'
-import styles from './HeroInfo.module.css'
 
 const HeroLinks = ({ github, email, cv }) => {
 	return (
-		<div className={styles.heroLinks}>
+		<div className="flex justify-start items-center gap-[1.75rem]">
 			<IconLink href={github}>
 				<Github height="1.5rem" width="1.5rem" />
 			</IconLink>
@@ -27,7 +26,7 @@ export const HeroInfo = ({ info }) => {
 
 	return (
 		<motion.article
-			className={styles.heroInfo}
+			className="text-left flex flex-col w-full h-full justify-center gap-[1.75rem]"
 			variants={variants}
 			initial="initial"
 			animate="animate"

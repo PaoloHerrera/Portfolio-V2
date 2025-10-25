@@ -4,8 +4,6 @@ import { TimelineLine } from './TimelineLine.jsx'
 import { useScroll } from 'motion/react'
 import { useRef } from 'react'
 
-import styles from './ExperienceTimeline.module.css'
-
 export const ExperienceTimeline = ({ items }) => {
 	const ref = useRef(null)
 
@@ -16,7 +14,8 @@ export const ExperienceTimeline = ({ items }) => {
 
 	return (
 		<div
-			className={`${styles.experienceTimeline} gap-14 flex flex-col mt-20 relative`}
+			className={'gap-14 flex flex-col mt-20 relative'}
+			style={{ perspective: '1000px' }}
 			ref={ref}
 		>
 			<TimelineLine scrollYProgress={scrollYProgress} />
