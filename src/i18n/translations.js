@@ -1,9 +1,9 @@
-import { PERSONAL_INFO } from '../constants/personalInfo.js'
+import { ABOUT_ME } from '../constants/about.js'
+import { CONTACT_ME } from '../constants/contact.js'
 import { EXPERIENCE_ITEMS } from '../constants/experience.js'
 import { NAVBAR_ITEMS } from '../constants/navbar.js'
+import { PERSONAL_INFO } from '../constants/personalInfo.js'
 import { PROJECTS_ITEMS } from '../constants/projects.js'
-import { CONTACT_ME } from '../constants/contact.js'
-import { ABOUT_ME } from '../constants/about.js'
 
 export const translations = {
 	en: {

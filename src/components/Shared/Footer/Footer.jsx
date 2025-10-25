@@ -1,9 +1,9 @@
 import { IconLink } from '@/components/Shared/IconLink/IconLink.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
-import { MailIcon } from '@/components/Shared/Icons/Icons.jsx'
+import { MailIcon } from '@/components/Shared/Icons/icons.jsx'
 
-import { useTranslation } from '@/hooks/useTranslation.js'
 import { PERSONAL_INFO } from '@/constants/personalInfo.js'
+import { useTranslation } from '@/hooks/useTranslation.js'
 
 export const Footer = () => {
 	const { translate } = useTranslation()

@@ -1,8 +1,8 @@
-import { HeroInfo } from '@/components/Hero/HeroInfo/HeroInfo.jsx'
 import { HeroImage } from '@/components/Hero/HeroImage/HeroImage.jsx'
+import { HeroInfo } from '@/components/Hero/HeroInfo/HeroInfo.jsx'
+import { PERSONAL_INFO } from '@/constants/personalInfo.js'
 import { useTranslation } from '@/hooks/useTranslation.js'
 import styles from './Hero.module.css'
-import { PERSONAL_INFO } from '@/constants/personalInfo.js'
 
 export const Hero = () => {
 	const { translate } = useTranslation()

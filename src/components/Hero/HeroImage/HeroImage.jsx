@@ -1,6 +1,6 @@
-import styles from './HeroImage.module.css'
-import { motion } from 'motion/react'
 import { opacityVariants as variants } from '@/variants.js'
+import { motion } from 'motion/react'
+import styles from './HeroImage.module.css'
 
 export const HeroImage = ({ image }) => {
 	return (

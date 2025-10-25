@@ -1,5 +1,5 @@
-import { motion } from 'motion/react'
 import { leftVariants as variants } from '@/variants.js'
+import { motion } from 'motion/react'
 
 export const NavbarBrand = ({ item }) => {
 	return (

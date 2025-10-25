@@ -1,5 +1,5 @@
 .titleContainer {
-  @apply flex flex-row justify-center items-center w-full;
-  margin-top: 20px;
-  height: 80px;
+	@apply flex flex-row justify-center items-center w-full;
+	margin-top: 20px;
+	height: 80px;
 }

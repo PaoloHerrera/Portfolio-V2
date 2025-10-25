@@ -1,6 +1,6 @@
-import { useContext } from 'react'
 import { AppContext } from '@/context/AppContext.js'
 import { translations } from '@/i18n/translations.js'
+import { useContext } from 'react'
 
 export const useTranslation = () => {
 	const context = useContext(AppContext)

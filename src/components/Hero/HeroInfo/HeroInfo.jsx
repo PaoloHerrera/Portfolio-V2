@@ -1,10 +1,10 @@
-import { IconLink } from '@/components/Shared/IconLink/IconLink.jsx'
-import { MailIcon } from '@/components/Shared/Icons/Icons.jsx'
 import { ButtonLink } from '@/components/Shared/Button/Button.jsx'
+import { IconLink } from '@/components/Shared/IconLink/IconLink.jsx'
 import { Github } from '@/components/Shared/Icons/Tools/Github.jsx'
-import styles from './HeroInfo.module.css'
-import { motion } from 'motion/react'
+import { MailIcon } from '@/components/Shared/Icons/icons.jsx'
 import { leftVariants as variants } from '@/variants.js'
+import { motion } from 'motion/react'
+import styles from './HeroInfo.module.css'
 
 const HeroLinks = ({ github, email, cv }) => {
 	return (

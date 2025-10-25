@@ -1,5 +1,5 @@
-import styles from './NavbarLink.module.css'
 import { useMenu } from '@/hooks/useMenu.js'
+import styles from './NavbarLink.module.css'
 
 export const NavbarLink = ({ link, name }) => {
 	const { setMenu } = useMenu()

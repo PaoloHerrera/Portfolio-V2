@@ -1,9 +1,9 @@
-import styles from './ExperienceCard.module.css'
+import { CalendarIcon } from '@/components/Shared/Icons/icons.jsx'
 import { List } from '@/components/Shared/List/List.jsx'
-import { CalendarIcon } from '@/components/Shared/Icons/Icons.jsx'
 import { SpotlightCard } from '@/components/Shared/SpotlightCard/SpotlightCard.jsx'
-import { motion } from 'motion/react'
 import { useTheme } from '@/hooks/useTheme.js'
+import { motion } from 'motion/react'
+import styles from './ExperienceCard.module.css'
 
 export const ExperienceCard = ({ item, position }) => {
 	const { theme } = useTheme()

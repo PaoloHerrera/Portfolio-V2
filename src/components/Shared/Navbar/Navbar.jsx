@@ -1,12 +1,12 @@
-import styles from './Navbar.module.css'
+import { ToggleButton } from '@/components/Shared/Button/ToggleButton.jsx'
 import { useMenu } from '@/hooks/useMenu.js'
+import styles from './Navbar.module.css'
 import { NavbarBrand } from './NavbarBrand.jsx'
 import { NavbarLinks } from './NavbarLinks.jsx'
-import { ToggleButton } from '@/components/Shared/Button/ToggleButton.jsx'
 
+import { opacityVariants } from '@/variants.js'
 import { ToggleIcon } from '../Icons/Animate/ToggleIcon.jsx'
 import { Sidebar } from '../Sidebar/Sidebar.jsx'
-import { opacityVariants } from '@/variants.js'
 
 import { motion } from 'motion/react'
 
@@ -14,7 +14,7 @@ import { NAVBAR_BRAND } from '@/constants/navbar.js'
 
 import { useTranslation } from '@/hooks/useTranslation.js'
 
-import { LightIcon, DarkIcon } from '../Icons/Icons.jsx'
+import { DarkIcon, LightIcon } from '../Icons/icons.jsx'
 
 import { useTheme } from '@/hooks/useTheme.js'
 

@@ -1,27 +1,27 @@
-import { HTML5 as Html5Icon } from '@/components/Shared/Icons/Frontend/HTML5.jsx'
 import { CSS as CssIcon } from '@/components/Shared/Icons/Frontend/CSS.jsx'
+import { HTML5 as Html5Icon } from '@/components/Shared/Icons/Frontend/HTML5.jsx'
 import { JavaScript as JavaScriptIcon } from '@/components/Shared/Icons/Frontend/JavaScript.jsx'
-import { TailwindCSS as TailwindCssIcon } from '@/components/Shared/Icons/Frontend/TailwindCSS.jsx'
-import { Vue as VueIcon } from '@/components/Shared/Icons/Frontend/Vue.jsx'
 import { React as ReactIcon } from '@/components/Shared/Icons/Frontend/React.jsx'
+import { TailwindCSS as TailwindCssIcon } from '@/components/Shared/Icons/Frontend/TailwindCSS.jsx'
 import { TypeScript as TypeScriptIcon } from '@/components/Shared/Icons/Frontend/TypeScript.jsx'
+import { Vue as VueIcon } from '@/components/Shared/Icons/Frontend/Vue.jsx'
 
-import { Nodejs as NodejsIcon } from '@/components/Shared/Icons/Backend/Nodejs.jsx'
 import { Expressjs as ExpressjsIcon } from '@/components/Shared/Icons/Backend/Expressjs.jsx'
-import { MySQL as MySqlIcon } from '@/components/Shared/Icons/Backend/MySQL.jsx'
-import { Php as PhpIcon } from '@/components/Shared/Icons/Backend/Php.jsx'
 import { Laravel as LaravelIcon } from '@/components/Shared/Icons/Backend/Laravel.jsx'
 import { MongoDB as MongoDbIcon } from '@/components/Shared/Icons/Backend/MongoDB.jsx'
+import { MySQL as MySqlIcon } from '@/components/Shared/Icons/Backend/MySQL.jsx'
+import { Nodejs as NodejsIcon } from '@/components/Shared/Icons/Backend/Nodejs.jsx'
+import { Php as PhpIcon } from '@/components/Shared/Icons/Backend/Php.jsx'
 
+import { Docker as DockerIcon } from '@/components/Shared/Icons/Tools/Docker.jsx'
 import { Git as GitIcon } from '@/components/Shared/Icons/Tools/Git.jsx'
 import { Github as GithubIcon } from '@/components/Shared/Icons/Tools/Github.jsx'
 import { VisualStudioCode as VisualStudioCodeIcon } from '@/components/Shared/Icons/Tools/VisualStudioCode.jsx'
-import { Docker as DockerIcon } from '@/components/Shared/Icons/Tools/Docker.jsx'
 
 import { Nextjs as NextjsIcon } from '@/components/Shared/Icons/Frontend/Nextjs.jsx'
+import { Figma as FigmaIcon } from '@/components/Shared/Icons/Tools/Figma.jsx'
 import { Jest as JestIcon } from '@/components/Shared/Icons/Tools/Jest.jsx'
 import { Playwright as PlaywrightIcon } from '@/components/Shared/Icons/Tools/Playwright.jsx'
-import { Figma as FigmaIcon } from '@/components/Shared/Icons/Tools/Figma.jsx'
 
 export const NEXTJS = {
 	name: 'Next.js',

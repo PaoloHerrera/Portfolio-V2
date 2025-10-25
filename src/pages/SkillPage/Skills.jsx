@@ -1,7 +1,7 @@
-import { PageTitle } from '@/pages/PageTitle.jsx'
 import { SkillCard } from '@/components/Skills/SkillCard.jsx'
-import { FRONTEND, BACKEND, TOOLS, LEARNING } from '@/constants/skills.js'
+import { BACKEND, FRONTEND, LEARNING, TOOLS } from '@/constants/skills.js'
 import { useTranslation } from '@/hooks/useTranslation.js'
+import { PageTitle } from '@/pages/PageTitle.jsx'
 
 export const Skills = () => {
 	const { translate } = useTranslation()

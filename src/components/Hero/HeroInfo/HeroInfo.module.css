@@ -1,9 +1,9 @@
 .heroInfo {
-  @apply text-left flex flex-col w-full h-full justify-center;
-  gap: 1.75rem;
+	@apply text-left flex flex-col w-full h-full justify-center;
+	gap: 1.75rem;
 }
 
 .heroLinks {
-  @apply flex justify-start items-center;
-  gap: 1.75rem;
+	@apply flex justify-start items-center;
+	gap: 1.75rem;
 }
